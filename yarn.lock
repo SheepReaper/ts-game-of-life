@@ -1520,10 +1520,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/p5@npm:1.7.3":
-  version: 1.7.3
-  resolution: "@types/p5@npm:1.7.3"
-  checksum: 6824f1649077b1592d8a963db6eab9fb5db853b4de3c4f19545fce64f2917ca7b4b4af3cc85d1f7536b0a3eff2ff6696eb3f8ab9e5e2292a1a2e598d36f681f6
+"@types/p5@npm:1.7.4":
+  version: 1.7.4
+  resolution: "@types/p5@npm:1.7.4"
+  checksum: dabf9b47635eb5d99ef5dd0555f710cb72578187463f90f4c2c94f1fc212952fcc656e6ad8abded14044581c5a6a6c5306c96f328a19ddecceff3a6fa75eb337
   languageName: node
   linkType: hard
 
@@ -3446,10 +3446,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p5@npm:1.8.0":
-  version: 1.8.0
-  resolution: "p5@npm:1.8.0"
-  checksum: 8fb3fbe18b1a03bc5d093d5d6c52b9ef56788c460560edcffa885a2aaacccc5c1e28daa1f73b53a5e879fe294c46b240a487cfdab33b80174b6855131fe01d8c
+"p5@npm:1.9.0":
+  version: 1.9.0
+  resolution: "p5@npm:1.9.0"
+  checksum: e2bed00c38aa2719c639ef4491c53800fea77024db7d3764f0db67d16d8236becfa59840f806bd0a9944a256e28c9a5f9ac790f15659461c9d3650446fbee9c7
   languageName: node
   linkType: hard
 
@@ -3979,13 +3979,13 @@ __metadata:
   resolution: "typescript-p5-template@workspace:."
   dependencies:
     "@types/eslint": "npm:8.44.8"
-    "@types/p5": "npm:1.7.3"
+    "@types/p5": "npm:1.7.4"
     "@types/prettier": "npm:2.7.3"
     "@typescript-eslint/eslint-plugin": "npm:6.11.0"
     "@typescript-eslint/parser": "npm:6.11.0"
     eslint: "npm:8.54.0"
     eslint-config-prettier: "npm:9.0.0"
-    p5: "npm:1.8.0"
+    p5: "npm:1.9.0"
     parcel: "npm:2.10.3"
     prettier: "npm:3.0.3"
     typescript: "npm:5.2.2"
