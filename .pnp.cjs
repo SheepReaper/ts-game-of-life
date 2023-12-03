@@ -32,7 +32,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.13.1"],\
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.13.1"],\
           ["eslint", "npm:8.55.0"],\
-          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.0.0"],\
+          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
           ["p5", "npm:1.9.0"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.10.3"],\
           ["prettier", "npm:3.1.0"],\
@@ -2541,17 +2541,17 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["eslint-config-prettier", [\
-      ["npm:9.0.0", {\
-        "packageLocation": "../../../../cache/others/berry/cache/eslint-config-prettier-npm-9.0.0-8f5ce20d27-10c0.zip/node_modules/eslint-config-prettier/",\
+      ["npm:9.1.0", {\
+        "packageLocation": "../../../../cache/others/berry/cache/eslint-config-prettier-npm-9.1.0-0e1fd42d7d-10c0.zip/node_modules/eslint-config-prettier/",\
         "packageDependencies": [\
-          ["eslint-config-prettier", "npm:9.0.0"]\
+          ["eslint-config-prettier", "npm:9.1.0"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.0.0", {\
-        "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-ff50b609fb/5/cache/others/berry/cache/eslint-config-prettier-npm-9.0.0-8f5ce20d27-10c0.zip/node_modules/eslint-config-prettier/",\
+      ["virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0", {\
+        "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-36f2940c65/5/cache/others/berry/cache/eslint-config-prettier-npm-9.1.0-0e1fd42d7d-10c0.zip/node_modules/eslint-config-prettier/",\
         "packageDependencies": [\
-          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.0.0"],\
+          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
           ["@types/eslint", "npm:8.44.8"],\
           ["eslint", "npm:8.55.0"]\
         ],\
@@ -4455,7 +4455,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/eslint-plugin", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.13.1"],\
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.13.1"],\
           ["eslint", "npm:8.55.0"],\
-          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.0.0"],\
+          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
           ["p5", "npm:1.9.0"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.10.3"],\
           ["prettier", "npm:3.1.0"],\
