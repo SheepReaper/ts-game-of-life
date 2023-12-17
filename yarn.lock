@@ -1280,10 +1280,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/p5@npm:1.7.4":
-  version: 1.7.4
-  resolution: "@types/p5@npm:1.7.4"
-  checksum: dabf9b47635eb5d99ef5dd0555f710cb72578187463f90f4c2c94f1fc212952fcc656e6ad8abded14044581c5a6a6c5306c96f328a19ddecceff3a6fa75eb337
+"@types/p5@npm:1.7.6":
+  version: 1.7.6
+  resolution: "@types/p5@npm:1.7.6"
+  checksum: 92f53b7666a346a70c144fd72e09d06b9ef54a099098629717d0a70043d2ce96f1e3f49e6d36c7afa7f27ceaa4b833cca50d9d33878d201fce7105658ace0a6e
   languageName: node
   linkType: hard
 
@@ -3739,7 +3739,7 @@ __metadata:
   resolution: "typescript-p5-template@workspace:."
   dependencies:
     "@types/eslint": "npm:8.44.9"
-    "@types/p5": "npm:1.7.4"
+    "@types/p5": "npm:1.7.6"
     "@types/prettier": "npm:2.7.3"
     "@typescript-eslint/eslint-plugin": "npm:6.14.0"
     "@typescript-eslint/parser": "npm:6.14.0"
