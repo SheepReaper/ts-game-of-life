@@ -156,11 +156,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@humanwhocodes/config-array", [\
-      ["npm:0.11.13", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@humanwhocodes-config-array-npm-0.11.13-12314014f2-10c0.zip/node_modules/@humanwhocodes/config-array/",\
+      ["npm:0.11.14", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@humanwhocodes-config-array-npm-0.11.14-94a02fcc87-10c0.zip/node_modules/@humanwhocodes/config-array/",\
         "packageDependencies": [\
-          ["@humanwhocodes/config-array", "npm:0.11.13"],\
-          ["@humanwhocodes/object-schema", "npm:2.0.1"],\
+          ["@humanwhocodes/config-array", "npm:0.11.14"],\
+          ["@humanwhocodes/object-schema", "npm:2.0.2"],\
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.3.4"],\
           ["minimatch", "npm:3.1.2"]\
         ],\
@@ -177,10 +177,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@humanwhocodes/object-schema", [\
-      ["npm:2.0.1", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@humanwhocodes-object-schema-npm-2.0.1-c23364bbfc-10c0.zip/node_modules/@humanwhocodes/object-schema/",\
+      ["npm:2.0.2", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@humanwhocodes-object-schema-npm-2.0.2-77b42018f9-10c0.zip/node_modules/@humanwhocodes/object-schema/",\
         "packageDependencies": [\
-          ["@humanwhocodes/object-schema", "npm:2.0.1"]\
+          ["@humanwhocodes/object-schema", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -665,7 +665,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.11.0"],\
           ["browserslist", "npm:4.22.2"],\
-          ["lightningcss", "npm:1.22.1"],\
+          ["lightningcss", "npm:1.23.0"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -734,7 +734,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/plugin", "npm:2.11.0"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.11.0"],\
-          ["@swc/core", "virtual:4799184866cd9cb2867cf49e40df5e30b686091241fc4cc427f5e3eb7f7b349698c16ff8ede59668764bad9b6d43d9686d4bd070291adaf700abdf26dedd4b71#npm:1.3.102"],\
+          ["@swc/core", "virtual:4799184866cd9cb2867cf49e40df5e30b686091241fc4cc427f5e3eb7f7b349698c16ff8ede59668764bad9b6d43d9686d4bd070291adaf700abdf26dedd4b71#npm:1.3.103"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -1014,7 +1014,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.11.0"],\
           ["browserslist", "npm:4.22.2"],\
-          ["lightningcss", "npm:1.22.1"],\
+          ["lightningcss", "npm:1.23.0"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -1384,27 +1384,27 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@swc/core", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-e8ac4b152a/node_modules/@swc/core/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-7837baf187/node_modules/@swc/core/",\
         "packageDependencies": [\
-          ["@swc/core", "npm:1.3.102"]\
+          ["@swc/core", "npm:1.3.103"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4799184866cd9cb2867cf49e40df5e30b686091241fc4cc427f5e3eb7f7b349698c16ff8ede59668764bad9b6d43d9686d4bd070291adaf700abdf26dedd4b71#npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-e8ac4b152a/node_modules/@swc/core/",\
+      ["virtual:4799184866cd9cb2867cf49e40df5e30b686091241fc4cc427f5e3eb7f7b349698c16ff8ede59668764bad9b6d43d9686d4bd070291adaf700abdf26dedd4b71#npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-7837baf187/node_modules/@swc/core/",\
         "packageDependencies": [\
-          ["@swc/core", "virtual:4799184866cd9cb2867cf49e40df5e30b686091241fc4cc427f5e3eb7f7b349698c16ff8ede59668764bad9b6d43d9686d4bd070291adaf700abdf26dedd4b71#npm:1.3.102"],\
-          ["@swc/core-darwin-arm64", "npm:1.3.102"],\
-          ["@swc/core-darwin-x64", "npm:1.3.102"],\
-          ["@swc/core-linux-arm-gnueabihf", "npm:1.3.102"],\
-          ["@swc/core-linux-arm64-gnu", "npm:1.3.102"],\
-          ["@swc/core-linux-arm64-musl", "npm:1.3.102"],\
-          ["@swc/core-linux-x64-gnu", "npm:1.3.102"],\
-          ["@swc/core-linux-x64-musl", "npm:1.3.102"],\
-          ["@swc/core-win32-arm64-msvc", "npm:1.3.102"],\
-          ["@swc/core-win32-ia32-msvc", "npm:1.3.102"],\
-          ["@swc/core-win32-x64-msvc", "npm:1.3.102"],\
+          ["@swc/core", "virtual:4799184866cd9cb2867cf49e40df5e30b686091241fc4cc427f5e3eb7f7b349698c16ff8ede59668764bad9b6d43d9686d4bd070291adaf700abdf26dedd4b71#npm:1.3.103"],\
+          ["@swc/core-darwin-arm64", "npm:1.3.103"],\
+          ["@swc/core-darwin-x64", "npm:1.3.103"],\
+          ["@swc/core-linux-arm-gnueabihf", "npm:1.3.103"],\
+          ["@swc/core-linux-arm64-gnu", "npm:1.3.103"],\
+          ["@swc/core-linux-arm64-musl", "npm:1.3.103"],\
+          ["@swc/core-linux-x64-gnu", "npm:1.3.103"],\
+          ["@swc/core-linux-x64-musl", "npm:1.3.103"],\
+          ["@swc/core-win32-arm64-msvc", "npm:1.3.103"],\
+          ["@swc/core-win32-ia32-msvc", "npm:1.3.103"],\
+          ["@swc/core-win32-x64-msvc", "npm:1.3.103"],\
           ["@swc/counter", "npm:0.1.2"],\
           ["@swc/helpers", null],\
           ["@swc/types", "npm:0.1.5"],\
@@ -1418,91 +1418,91 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@swc/core-darwin-arm64", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-arm64-npm-1.3.102-c50bc7f94f/node_modules/@swc/core-darwin-arm64/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-arm64-npm-1.3.103-cfd205f6f3/node_modules/@swc/core-darwin-arm64/",\
         "packageDependencies": [\
-          ["@swc/core-darwin-arm64", "npm:1.3.102"]\
+          ["@swc/core-darwin-arm64", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-darwin-x64", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-x64-npm-1.3.102-bbcf5f1845/node_modules/@swc/core-darwin-x64/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-x64-npm-1.3.103-e2a2110f26/node_modules/@swc/core-darwin-x64/",\
         "packageDependencies": [\
-          ["@swc/core-darwin-x64", "npm:1.3.102"]\
+          ["@swc/core-darwin-x64", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-arm-gnueabihf", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm-gnueabihf-npm-1.3.102-ea166d4141/node_modules/@swc/core-linux-arm-gnueabihf/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm-gnueabihf-npm-1.3.103-14bd114caf/node_modules/@swc/core-linux-arm-gnueabihf/",\
         "packageDependencies": [\
-          ["@swc/core-linux-arm-gnueabihf", "npm:1.3.102"]\
+          ["@swc/core-linux-arm-gnueabihf", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-arm64-gnu", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-gnu-npm-1.3.102-3f40864334/node_modules/@swc/core-linux-arm64-gnu/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-gnu-npm-1.3.103-dafc25364d/node_modules/@swc/core-linux-arm64-gnu/",\
         "packageDependencies": [\
-          ["@swc/core-linux-arm64-gnu", "npm:1.3.102"]\
+          ["@swc/core-linux-arm64-gnu", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-arm64-musl", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-musl-npm-1.3.102-f18fbacba2/node_modules/@swc/core-linux-arm64-musl/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-musl-npm-1.3.103-879e6d779b/node_modules/@swc/core-linux-arm64-musl/",\
         "packageDependencies": [\
-          ["@swc/core-linux-arm64-musl", "npm:1.3.102"]\
+          ["@swc/core-linux-arm64-musl", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-x64-gnu", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-gnu-npm-1.3.102-319f47da96/node_modules/@swc/core-linux-x64-gnu/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-gnu-npm-1.3.103-455a6fb884/node_modules/@swc/core-linux-x64-gnu/",\
         "packageDependencies": [\
-          ["@swc/core-linux-x64-gnu", "npm:1.3.102"]\
+          ["@swc/core-linux-x64-gnu", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-x64-musl", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-musl-npm-1.3.102-4cc81cb050/node_modules/@swc/core-linux-x64-musl/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-musl-npm-1.3.103-d9a6f32a95/node_modules/@swc/core-linux-x64-musl/",\
         "packageDependencies": [\
-          ["@swc/core-linux-x64-musl", "npm:1.3.102"]\
+          ["@swc/core-linux-x64-musl", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-win32-arm64-msvc", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-win32-arm64-msvc-npm-1.3.102-b2ec90226a/node_modules/@swc/core-win32-arm64-msvc/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-win32-arm64-msvc-npm-1.3.103-a76690a2b2/node_modules/@swc/core-win32-arm64-msvc/",\
         "packageDependencies": [\
-          ["@swc/core-win32-arm64-msvc", "npm:1.3.102"]\
+          ["@swc/core-win32-arm64-msvc", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-win32-ia32-msvc", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-win32-ia32-msvc-npm-1.3.102-f566268176/node_modules/@swc/core-win32-ia32-msvc/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-win32-ia32-msvc-npm-1.3.103-7d392ac31b/node_modules/@swc/core-win32-ia32-msvc/",\
         "packageDependencies": [\
-          ["@swc/core-win32-ia32-msvc", "npm:1.3.102"]\
+          ["@swc/core-win32-ia32-msvc", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-win32-x64-msvc", [\
-      ["npm:1.3.102", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-win32-x64-msvc-npm-1.3.102-edeb7b5c60/node_modules/@swc/core-win32-x64-msvc/",\
+      ["npm:1.3.103", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-win32-x64-msvc-npm-1.3.103-8bafa122a1/node_modules/@swc/core-win32-x64-msvc/",\
         "packageDependencies": [\
-          ["@swc/core-win32-x64-msvc", "npm:1.3.102"]\
+          ["@swc/core-win32-x64-msvc", "npm:1.3.103"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2027,7 +2027,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["browserslist", "npm:4.22.2"],\
           ["caniuse-lite", "npm:1.0.30001576"],\
-          ["electron-to-chromium", "npm:1.4.623"],\
+          ["electron-to-chromium", "npm:1.4.630"],\
           ["node-releases", "npm:2.0.14"],\
           ["update-browserslist-db", "virtual:87e70d802146e5a0e8f2a12b5ab64004040c6640441dba54229a7db766cb1b88edabd3d3c814ce33d6ba839c4e517b12e9b0a7febfca22ac2a64177042bf3ee6#npm:1.0.13"]\
         ],\
@@ -2413,10 +2413,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["electron-to-chromium", [\
-      ["npm:1.4.623", {\
-        "packageLocation": "../../../../cache/others/berry/cache/electron-to-chromium-npm-1.4.623-950fa7fa1c-10c0.zip/node_modules/electron-to-chromium/",\
+      ["npm:1.4.630", {\
+        "packageLocation": "../../../../cache/others/berry/cache/electron-to-chromium-npm-1.4.630-cfd6250493-10c0.zip/node_modules/electron-to-chromium/",\
         "packageDependencies": [\
-          ["electron-to-chromium", "npm:1.4.623"]\
+          ["electron-to-chromium", "npm:1.4.630"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2525,7 +2525,7 @@ const RAW_RUNTIME_STATE =
           ["@eslint-community/regexpp", "npm:4.10.0"],\
           ["@eslint/eslintrc", "npm:2.1.4"],\
           ["@eslint/js", "npm:8.56.0"],\
-          ["@humanwhocodes/config-array", "npm:0.11.13"],\
+          ["@humanwhocodes/config-array", "npm:0.11.14"],\
           ["@humanwhocodes/module-importer", "npm:1.0.1"],\
           ["@nodelib/fs.walk", "npm:1.2.8"],\
           ["@ungap/structured-clone", "npm:1.2.0"],\
@@ -3278,101 +3278,101 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["lightningcss", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "../../../../cache/others/berry/cache/lightningcss-npm-1.22.1-262543e10b-10c0.zip/node_modules/lightningcss/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "../../../../cache/others/berry/cache/lightningcss-npm-1.23.0-05b1b9cfcd-10c0.zip/node_modules/lightningcss/",\
         "packageDependencies": [\
-          ["lightningcss", "npm:1.22.1"],\
+          ["lightningcss", "npm:1.23.0"],\
           ["detect-libc", "npm:1.0.3"],\
-          ["lightningcss-darwin-arm64", "npm:1.22.1"],\
-          ["lightningcss-darwin-x64", "npm:1.22.1"],\
-          ["lightningcss-freebsd-x64", "npm:1.22.1"],\
-          ["lightningcss-linux-arm-gnueabihf", "npm:1.22.1"],\
-          ["lightningcss-linux-arm64-gnu", "npm:1.22.1"],\
-          ["lightningcss-linux-arm64-musl", "npm:1.22.1"],\
-          ["lightningcss-linux-x64-gnu", "npm:1.22.1"],\
-          ["lightningcss-linux-x64-musl", "npm:1.22.1"],\
-          ["lightningcss-win32-x64-msvc", "npm:1.22.1"]\
+          ["lightningcss-darwin-arm64", "npm:1.23.0"],\
+          ["lightningcss-darwin-x64", "npm:1.23.0"],\
+          ["lightningcss-freebsd-x64", "npm:1.23.0"],\
+          ["lightningcss-linux-arm-gnueabihf", "npm:1.23.0"],\
+          ["lightningcss-linux-arm64-gnu", "npm:1.23.0"],\
+          ["lightningcss-linux-arm64-musl", "npm:1.23.0"],\
+          ["lightningcss-linux-x64-gnu", "npm:1.23.0"],\
+          ["lightningcss-linux-x64-musl", "npm:1.23.0"],\
+          ["lightningcss-win32-x64-msvc", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-darwin-arm64", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-darwin-arm64-npm-1.22.1-0a4d9915df/node_modules/lightningcss-darwin-arm64/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-darwin-arm64-npm-1.23.0-6fdabbc3ea/node_modules/lightningcss-darwin-arm64/",\
         "packageDependencies": [\
-          ["lightningcss-darwin-arm64", "npm:1.22.1"]\
+          ["lightningcss-darwin-arm64", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-darwin-x64", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-darwin-x64-npm-1.22.1-771a56001d/node_modules/lightningcss-darwin-x64/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-darwin-x64-npm-1.23.0-963a4ce9ef/node_modules/lightningcss-darwin-x64/",\
         "packageDependencies": [\
-          ["lightningcss-darwin-x64", "npm:1.22.1"]\
+          ["lightningcss-darwin-x64", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-freebsd-x64", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-freebsd-x64-npm-1.22.1-9f43113dca/node_modules/lightningcss-freebsd-x64/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-freebsd-x64-npm-1.23.0-4cfa5c451d/node_modules/lightningcss-freebsd-x64/",\
         "packageDependencies": [\
-          ["lightningcss-freebsd-x64", "npm:1.22.1"]\
+          ["lightningcss-freebsd-x64", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-linux-arm-gnueabihf", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-linux-arm-gnueabihf-npm-1.22.1-b6fecb68e1/node_modules/lightningcss-linux-arm-gnueabihf/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-linux-arm-gnueabihf-npm-1.23.0-ff6c0fef8f/node_modules/lightningcss-linux-arm-gnueabihf/",\
         "packageDependencies": [\
-          ["lightningcss-linux-arm-gnueabihf", "npm:1.22.1"]\
+          ["lightningcss-linux-arm-gnueabihf", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-linux-arm64-gnu", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-linux-arm64-gnu-npm-1.22.1-7881007796/node_modules/lightningcss-linux-arm64-gnu/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-linux-arm64-gnu-npm-1.23.0-46b7a64d9b/node_modules/lightningcss-linux-arm64-gnu/",\
         "packageDependencies": [\
-          ["lightningcss-linux-arm64-gnu", "npm:1.22.1"]\
+          ["lightningcss-linux-arm64-gnu", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-linux-arm64-musl", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-linux-arm64-musl-npm-1.22.1-32c2c3f4aa/node_modules/lightningcss-linux-arm64-musl/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-linux-arm64-musl-npm-1.23.0-8f8a7233cf/node_modules/lightningcss-linux-arm64-musl/",\
         "packageDependencies": [\
-          ["lightningcss-linux-arm64-musl", "npm:1.22.1"]\
+          ["lightningcss-linux-arm64-musl", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-linux-x64-gnu", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-linux-x64-gnu-npm-1.22.1-6a28b74952/node_modules/lightningcss-linux-x64-gnu/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-linux-x64-gnu-npm-1.23.0-da32e66eb2/node_modules/lightningcss-linux-x64-gnu/",\
         "packageDependencies": [\
-          ["lightningcss-linux-x64-gnu", "npm:1.22.1"]\
+          ["lightningcss-linux-x64-gnu", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-linux-x64-musl", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-linux-x64-musl-npm-1.22.1-c1cb635835/node_modules/lightningcss-linux-x64-musl/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-linux-x64-musl-npm-1.23.0-625cbdc2a6/node_modules/lightningcss-linux-x64-musl/",\
         "packageDependencies": [\
-          ["lightningcss-linux-x64-musl", "npm:1.22.1"]\
+          ["lightningcss-linux-x64-musl", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["lightningcss-win32-x64-msvc", [\
-      ["npm:1.22.1", {\
-        "packageLocation": "./.yarn/unplugged/lightningcss-win32-x64-msvc-npm-1.22.1-3600d99456/node_modules/lightningcss-win32-x64-msvc/",\
+      ["npm:1.23.0", {\
+        "packageLocation": "./.yarn/unplugged/lightningcss-win32-x64-msvc-npm-1.23.0-2ef28b75be/node_modules/lightningcss-win32-x64-msvc/",\
         "packageDependencies": [\
-          ["lightningcss-win32-x64-msvc", "npm:1.22.1"]\
+          ["lightningcss-win32-x64-msvc", "npm:1.23.0"]\
         ],\
         "linkType": "HARD"\
       }]\
