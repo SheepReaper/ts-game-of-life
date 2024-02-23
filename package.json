@@ -6,12 +6,12 @@
     "serve": "parcel serve src/index.html"
   },
   "devDependencies": {
-    "@types/eslint": "8.56.2",
+    "@types/eslint": "8.56.3",
     "@types/p5": "1.7.6",
     "@types/prettier": "2.7.3",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
-    "eslint": "8.56.0",
+    "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "p5": "1.9.0",
     "parcel": "2.11.0",
