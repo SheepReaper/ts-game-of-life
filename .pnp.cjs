@@ -28,7 +28,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/p5", "npm:1.7.6"],\
-          ["@types/prettier", "npm:2.7.3"],\
+          ["@types/prettier", "npm:3.0.0"],\
           ["@typescript-eslint/eslint-plugin", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.21.0"],\
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.21.0"],\
           ["eslint", "npm:8.57.0"],\
@@ -1586,10 +1586,11 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@types/prettier", [\
-      ["npm:2.7.3", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@types-prettier-npm-2.7.3-497316f37c-10c0.zip/node_modules/@types/prettier/",\
+      ["npm:3.0.0", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@types-prettier-npm-3.0.0-6c770110eb-10c0.zip/node_modules/@types/prettier/",\
         "packageDependencies": [\
-          ["@types/prettier", "npm:2.7.3"]\
+          ["@types/prettier", "npm:3.0.0"],\
+          ["prettier", "npm:3.2.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4487,7 +4488,7 @@ const RAW_RUNTIME_STATE =
           ["typescript-p5-template", "workspace:."],\
           ["@types/eslint", "npm:8.56.6"],\
           ["@types/p5", "npm:1.7.6"],\
-          ["@types/prettier", "npm:2.7.3"],\
+          ["@types/prettier", "npm:3.0.0"],\
           ["@typescript-eslint/eslint-plugin", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.21.0"],\
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:6.21.0"],\
           ["eslint", "npm:8.57.0"],\
