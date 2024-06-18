@@ -8,14 +8,14 @@
   "devDependencies": {
     "@types/eslint": "8.56.10",
     "@types/p5": "1.7.6",
-    "@types/prettier": "2.7.3",
+    "@types/prettier": "3.0.0",
     "@typescript-eslint/eslint-plugin": "7.13.1",
     "@typescript-eslint/parser": "7.13.1",
     "eslint": "8.57.0",
     "eslint-config-prettier": "9.1.0",
     "p5": "1.9.4",
     "parcel": "2.12.0",
-    "prettier": "3.2.5",
+    "prettier": "3.3.2",
     "typescript": "5.4.5"
   },
   "packageManager": "yarn@4.3.0"
