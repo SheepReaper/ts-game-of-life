@@ -36,7 +36,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
           ["p5", "npm:1.9.4"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.12.0"],\
-          ["prettier", "npm:3.3.2"],\
+          ["prettier", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
         ],\
         "linkType": "SOFT"\
@@ -3999,6 +3999,13 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.3.2"]\
         ],\
         "linkType": "HARD"\
+      }],\
+      ["npm:3.3.3", {\
+        "packageLocation": "./.yarn/unplugged/prettier-npm-3.3.3-e811f023f3/node_modules/prettier/",\
+        "packageDependencies": [\
+          ["prettier", "npm:3.3.3"]\
+        ],\
+        "linkType": "HARD"\
       }]\
     ]],\
     ["proc-log", [\
@@ -4483,7 +4490,7 @@ const RAW_RUNTIME_STATE =
           ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
           ["p5", "npm:1.9.4"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.12.0"],\
-          ["prettier", "npm:3.3.2"],\
+          ["prettier", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.3#optional!builtin<compat/typescript>::version=5.5.3&hash=379a07"]\
         ],\
         "linkType": "SOFT"\
