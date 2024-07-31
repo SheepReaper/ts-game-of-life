@@ -34,7 +34,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
-          ["p5", "npm:1.9.4"],\
+          ["p5", "npm:1.10.0"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.12.0"],\
           ["prettier", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
@@ -3796,10 +3796,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["p5", [\
-      ["npm:1.9.4", {\
-        "packageLocation": "../../../../cache/others/berry/cache/p5-npm-1.9.4-643addebdd-10c0.zip/node_modules/p5/",\
+      ["npm:1.10.0", {\
+        "packageLocation": "../../../../cache/others/berry/cache/p5-npm-1.10.0-bfe42d7fbf-10c0.zip/node_modules/p5/",\
         "packageDependencies": [\
-          ["p5", "npm:1.9.4"]\
+          ["p5", "npm:1.10.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4474,7 +4474,7 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["eslint", "npm:8.57.0"],\
           ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.0"],\
-          ["p5", "npm:1.9.4"],\
+          ["p5", "npm:1.10.0"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.12.0"],\
           ["prettier", "npm:3.3.3"],\
           ["typescript", "patch:typescript@npm%3A5.5.4#optional!builtin<compat/typescript>::version=5.5.4&hash=379a07"]\
