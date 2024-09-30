@@ -531,7 +531,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/workers", "virtual:ffe47febbf7847f9b64454e506be514f3cbd8bbd1821ba64e8e762685b5100c3f7867a926c2aa7f5349f2a1370184e7d2f8f70428bcab9b21701f56d9632c378#npm:2.12.0"],\
           ["abortcontroller-polyfill", "npm:1.7.5"],\
           ["base-x", "npm:3.0.10"],\
-          ["browserslist", "npm:4.23.3"],\
+          ["browserslist", "npm:4.24.0"],\
           ["clone", "npm:2.1.2"],\
           ["dotenv", "npm:7.0.0"],\
           ["dotenv-expand", "npm:5.1.0"],\
@@ -657,7 +657,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/plugin", "npm:2.12.0"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.12.0"],\
-          ["browserslist", "npm:4.23.3"],\
+          ["browserslist", "npm:4.24.0"],\
           ["lightningcss", "npm:1.27.0"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -727,7 +727,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/plugin", "npm:2.12.0"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.12.0"],\
-          ["@swc/core", "virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.26"],\
+          ["@swc/core", "virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.28"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -753,7 +753,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/types", "npm:2.12.0"],\
           ["@parcel/utils", "npm:2.12.0"],\
           ["@parcel/workers", "virtual:ffe47febbf7847f9b64454e506be514f3cbd8bbd1821ba64e8e762685b5100c3f7867a926c2aa7f5349f2a1370184e7d2f8f70428bcab9b21701f56d9632c378#npm:2.12.0"],\
-          ["@swc/core", "virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.26"],\
+          ["@swc/core", "virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.28"],\
           ["@types/parcel__core", null],\
           ["semver", "npm:7.6.3"]\
         ],\
@@ -990,7 +990,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/plugin", "npm:2.12.0"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.12.0"],\
-          ["browserslist", "npm:4.23.3"],\
+          ["browserslist", "npm:4.24.0"],\
           ["json5", "npm:2.2.3"],\
           ["nullthrows", "npm:1.1.1"],\
           ["semver", "npm:7.6.3"]\
@@ -1007,7 +1007,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/plugin", "npm:2.12.0"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.12.0"],\
-          ["browserslist", "npm:4.23.3"],\
+          ["browserslist", "npm:4.24.0"],\
           ["lightningcss", "npm:1.27.0"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1079,7 +1079,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/workers", "virtual:ffe47febbf7847f9b64454e506be514f3cbd8bbd1821ba64e8e762685b5100c3f7867a926c2aa7f5349f2a1370184e7d2f8f70428bcab9b21701f56d9632c378#npm:2.12.0"],\
           ["@swc/helpers", "npm:0.5.13"],\
           ["@types/parcel__core", null],\
-          ["browserslist", "npm:4.23.3"],\
+          ["browserslist", "npm:4.24.0"],\
           ["nullthrows", "npm:1.1.1"],\
           ["regenerator-runtime", "npm:0.13.11"],\
           ["semver", "npm:7.6.3"]\
@@ -1378,27 +1378,27 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@swc/core", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-c48d887eff/node_modules/@swc/core/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-dda4536021/node_modules/@swc/core/",\
         "packageDependencies": [\
-          ["@swc/core", "npm:1.7.26"]\
+          ["@swc/core", "npm:1.7.28"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-c48d887eff/node_modules/@swc/core/",\
+      ["virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-virtual-dda4536021/node_modules/@swc/core/",\
         "packageDependencies": [\
-          ["@swc/core", "virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.26"],\
-          ["@swc/core-darwin-arm64", "npm:1.7.26"],\
-          ["@swc/core-darwin-x64", "npm:1.7.26"],\
-          ["@swc/core-linux-arm-gnueabihf", "npm:1.7.26"],\
-          ["@swc/core-linux-arm64-gnu", "npm:1.7.26"],\
-          ["@swc/core-linux-arm64-musl", "npm:1.7.26"],\
-          ["@swc/core-linux-x64-gnu", "npm:1.7.26"],\
-          ["@swc/core-linux-x64-musl", "npm:1.7.26"],\
-          ["@swc/core-win32-arm64-msvc", "npm:1.7.26"],\
-          ["@swc/core-win32-ia32-msvc", "npm:1.7.26"],\
-          ["@swc/core-win32-x64-msvc", "npm:1.7.26"],\
+          ["@swc/core", "virtual:5f8211ac5fe0096c8679c8fc747f0917af84ce168460ce1b592cb42613ababf55139691f5b329cd10e1e2b99af39861401c7b9633ed396447c506b02a80144b0#npm:1.7.28"],\
+          ["@swc/core-darwin-arm64", "npm:1.7.28"],\
+          ["@swc/core-darwin-x64", "npm:1.7.28"],\
+          ["@swc/core-linux-arm-gnueabihf", "npm:1.7.28"],\
+          ["@swc/core-linux-arm64-gnu", "npm:1.7.28"],\
+          ["@swc/core-linux-arm64-musl", "npm:1.7.28"],\
+          ["@swc/core-linux-x64-gnu", "npm:1.7.28"],\
+          ["@swc/core-linux-x64-musl", "npm:1.7.28"],\
+          ["@swc/core-win32-arm64-msvc", "npm:1.7.28"],\
+          ["@swc/core-win32-ia32-msvc", "npm:1.7.28"],\
+          ["@swc/core-win32-x64-msvc", "npm:1.7.28"],\
           ["@swc/counter", "npm:0.1.3"],\
           ["@swc/helpers", null],\
           ["@swc/types", "npm:0.1.12"],\
@@ -1412,91 +1412,91 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@swc/core-darwin-arm64", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-arm64-npm-1.7.26-77ad8da84b/node_modules/@swc/core-darwin-arm64/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-arm64-npm-1.7.28-d26078bb46/node_modules/@swc/core-darwin-arm64/",\
         "packageDependencies": [\
-          ["@swc/core-darwin-arm64", "npm:1.7.26"]\
+          ["@swc/core-darwin-arm64", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-darwin-x64", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-x64-npm-1.7.26-2cdf90cf8c/node_modules/@swc/core-darwin-x64/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-darwin-x64-npm-1.7.28-231725ca9e/node_modules/@swc/core-darwin-x64/",\
         "packageDependencies": [\
-          ["@swc/core-darwin-x64", "npm:1.7.26"]\
+          ["@swc/core-darwin-x64", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-arm-gnueabihf", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm-gnueabihf-npm-1.7.26-2aefab36de/node_modules/@swc/core-linux-arm-gnueabihf/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm-gnueabihf-npm-1.7.28-c4551c54cc/node_modules/@swc/core-linux-arm-gnueabihf/",\
         "packageDependencies": [\
-          ["@swc/core-linux-arm-gnueabihf", "npm:1.7.26"]\
+          ["@swc/core-linux-arm-gnueabihf", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-arm64-gnu", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-gnu-npm-1.7.26-996ba887eb/node_modules/@swc/core-linux-arm64-gnu/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-gnu-npm-1.7.28-40a7ff4116/node_modules/@swc/core-linux-arm64-gnu/",\
         "packageDependencies": [\
-          ["@swc/core-linux-arm64-gnu", "npm:1.7.26"]\
+          ["@swc/core-linux-arm64-gnu", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-arm64-musl", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-musl-npm-1.7.26-554a3c919c/node_modules/@swc/core-linux-arm64-musl/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-arm64-musl-npm-1.7.28-65fbcb9494/node_modules/@swc/core-linux-arm64-musl/",\
         "packageDependencies": [\
-          ["@swc/core-linux-arm64-musl", "npm:1.7.26"]\
+          ["@swc/core-linux-arm64-musl", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-x64-gnu", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-gnu-npm-1.7.26-3f9254c7bf/node_modules/@swc/core-linux-x64-gnu/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-gnu-npm-1.7.28-6986896637/node_modules/@swc/core-linux-x64-gnu/",\
         "packageDependencies": [\
-          ["@swc/core-linux-x64-gnu", "npm:1.7.26"]\
+          ["@swc/core-linux-x64-gnu", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-linux-x64-musl", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-musl-npm-1.7.26-f8d550fb60/node_modules/@swc/core-linux-x64-musl/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-linux-x64-musl-npm-1.7.28-7af21cbfeb/node_modules/@swc/core-linux-x64-musl/",\
         "packageDependencies": [\
-          ["@swc/core-linux-x64-musl", "npm:1.7.26"]\
+          ["@swc/core-linux-x64-musl", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-win32-arm64-msvc", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-win32-arm64-msvc-npm-1.7.26-9c59967bab/node_modules/@swc/core-win32-arm64-msvc/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-win32-arm64-msvc-npm-1.7.28-009b0246f5/node_modules/@swc/core-win32-arm64-msvc/",\
         "packageDependencies": [\
-          ["@swc/core-win32-arm64-msvc", "npm:1.7.26"]\
+          ["@swc/core-win32-arm64-msvc", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-win32-ia32-msvc", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-win32-ia32-msvc-npm-1.7.26-fcac841f4b/node_modules/@swc/core-win32-ia32-msvc/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-win32-ia32-msvc-npm-1.7.28-c4139031bd/node_modules/@swc/core-win32-ia32-msvc/",\
         "packageDependencies": [\
-          ["@swc/core-win32-ia32-msvc", "npm:1.7.26"]\
+          ["@swc/core-win32-ia32-msvc", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@swc/core-win32-x64-msvc", [\
-      ["npm:1.7.26", {\
-        "packageLocation": "./.yarn/unplugged/@swc-core-win32-x64-msvc-npm-1.7.26-7e221b70ca/node_modules/@swc/core-win32-x64-msvc/",\
+      ["npm:1.7.28", {\
+        "packageLocation": "./.yarn/unplugged/@swc-core-win32-x64-msvc-npm-1.7.28-643a8317ed/node_modules/@swc/core-win32-x64-msvc/",\
         "packageDependencies": [\
-          ["@swc/core-win32-x64-msvc", "npm:1.7.26"]\
+          ["@swc/core-win32-x64-msvc", "npm:1.7.28"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2004,14 +2004,14 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["browserslist", [\
-      ["npm:4.23.3", {\
-        "packageLocation": "../../../../cache/others/berry/cache/browserslist-npm-4.23.3-4e727c7b5b-10c0.zip/node_modules/browserslist/",\
+      ["npm:4.24.0", {\
+        "packageLocation": "../../../../cache/others/berry/cache/browserslist-npm-4.24.0-6b67324c87-10c0.zip/node_modules/browserslist/",\
         "packageDependencies": [\
-          ["browserslist", "npm:4.23.3"],\
-          ["caniuse-lite", "npm:1.0.30001662"],\
-          ["electron-to-chromium", "npm:1.5.27"],\
+          ["browserslist", "npm:4.24.0"],\
+          ["caniuse-lite", "npm:1.0.30001664"],\
+          ["electron-to-chromium", "npm:1.5.29"],\
           ["node-releases", "npm:2.0.18"],\
-          ["update-browserslist-db", "virtual:4e727c7b5b033f8d5ac7299f9860cb61f5802656f7b4fea2accd32d68dc1a767387a6d23f0724065d3c65e61cb31b9eec2438ae937ce36e7602b4586ede55af6#npm:1.1.0"]\
+          ["update-browserslist-db", "virtual:6b67324c878ea06e56ed3caefea53f7683e6ecc2f59a5ccb4eed038528684d5d9ad5763adbad2b939021498b8316c469d622a567bb66012ffd14e8022cf45739#npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2047,10 +2047,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["caniuse-lite", [\
-      ["npm:1.0.30001662", {\
-        "packageLocation": "../../../../cache/others/berry/cache/caniuse-lite-npm-1.0.30001662-4f7a06daf5-10c0.zip/node_modules/caniuse-lite/",\
+      ["npm:1.0.30001664", {\
+        "packageLocation": "../../../../cache/others/berry/cache/caniuse-lite-npm-1.0.30001664-55249fe665-10c0.zip/node_modules/caniuse-lite/",\
         "packageDependencies": [\
-          ["caniuse-lite", "npm:1.0.30001662"]\
+          ["caniuse-lite", "npm:1.0.30001664"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2385,10 +2385,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["electron-to-chromium", [\
-      ["npm:1.5.27", {\
-        "packageLocation": "../../../../cache/others/berry/cache/electron-to-chromium-npm-1.5.27-03ccf9f126-10c0.zip/node_modules/electron-to-chromium/",\
+      ["npm:1.5.29", {\
+        "packageLocation": "../../../../cache/others/berry/cache/electron-to-chromium-npm-1.5.29-07d56f9c50-10c0.zip/node_modules/electron-to-chromium/",\
         "packageDependencies": [\
-          ["electron-to-chromium", "npm:1.5.27"]\
+          ["electron-to-chromium", "npm:1.5.29"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2795,7 +2795,7 @@ const RAW_RUNTIME_STATE =
           ["jackspeak", "npm:3.4.3"],\
           ["minimatch", "npm:9.0.5"],\
           ["minipass", "npm:7.1.2"],\
-          ["package-json-from-dist", "npm:1.0.0"],\
+          ["package-json-from-dist", "npm:1.0.1"],\
           ["path-scurry", "npm:1.11.1"]\
         ],\
         "linkType": "HARD"\
@@ -3395,7 +3395,7 @@ const RAW_RUNTIME_STATE =
           ["node-addon-api", "npm:6.1.0"],\
           ["node-gyp", "npm:10.2.0"],\
           ["node-gyp-build-optional-packages", "npm:5.1.1"],\
-          ["ordered-binary", "npm:1.5.1"],\
+          ["ordered-binary", "npm:1.5.2"],\
           ["weak-lru-cache", "npm:1.2.2"]\
         ],\
         "linkType": "HARD"\
@@ -3767,10 +3767,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["ordered-binary", [\
-      ["npm:1.5.1", {\
-        "packageLocation": "../../../../cache/others/berry/cache/ordered-binary-npm-1.5.1-778e738904-10c0.zip/node_modules/ordered-binary/",\
+      ["npm:1.5.2", {\
+        "packageLocation": "../../../../cache/others/berry/cache/ordered-binary-npm-1.5.2-280906204e-10c0.zip/node_modules/ordered-binary/",\
         "packageDependencies": [\
-          ["ordered-binary", "npm:1.5.1"]\
+          ["ordered-binary", "npm:1.5.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3815,10 +3815,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["package-json-from-dist", [\
-      ["npm:1.0.0", {\
-        "packageLocation": "../../../../cache/others/berry/cache/package-json-from-dist-npm-1.0.0-961f0fcb3b-10c0.zip/node_modules/package-json-from-dist/",\
+      ["npm:1.0.1", {\
+        "packageLocation": "../../../../cache/others/berry/cache/package-json-from-dist-npm-1.0.1-4631a88465-10c0.zip/node_modules/package-json-from-dist/",\
         "packageDependencies": [\
-          ["package-json-from-dist", "npm:1.0.0"]\
+          ["package-json-from-dist", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4513,19 +4513,19 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["update-browserslist-db", [\
-      ["npm:1.1.0", {\
-        "packageLocation": "../../../../cache/others/berry/cache/update-browserslist-db-npm-1.1.0-3d2cb7d955-10c0.zip/node_modules/update-browserslist-db/",\
+      ["npm:1.1.1", {\
+        "packageLocation": "../../../../cache/others/berry/cache/update-browserslist-db-npm-1.1.1-16e34017b1-10c0.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
-          ["update-browserslist-db", "npm:1.1.0"]\
+          ["update-browserslist-db", "npm:1.1.1"]\
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:4e727c7b5b033f8d5ac7299f9860cb61f5802656f7b4fea2accd32d68dc1a767387a6d23f0724065d3c65e61cb31b9eec2438ae937ce36e7602b4586ede55af6#npm:1.1.0", {\
-        "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-e5d722ea57/5/cache/others/berry/cache/update-browserslist-db-npm-1.1.0-3d2cb7d955-10c0.zip/node_modules/update-browserslist-db/",\
+      ["virtual:6b67324c878ea06e56ed3caefea53f7683e6ecc2f59a5ccb4eed038528684d5d9ad5763adbad2b939021498b8316c469d622a567bb66012ffd14e8022cf45739#npm:1.1.1", {\
+        "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-29df3fc383/5/cache/others/berry/cache/update-browserslist-db-npm-1.1.1-16e34017b1-10c0.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
-          ["update-browserslist-db", "virtual:4e727c7b5b033f8d5ac7299f9860cb61f5802656f7b4fea2accd32d68dc1a767387a6d23f0724065d3c65e61cb31b9eec2438ae937ce36e7602b4586ede55af6#npm:1.1.0"],\
+          ["update-browserslist-db", "virtual:6b67324c878ea06e56ed3caefea53f7683e6ecc2f59a5ccb4eed038528684d5d9ad5763adbad2b939021498b8316c469d622a567bb66012ffd14e8022cf45739#npm:1.1.1"],\
           ["@types/browserslist", null],\
-          ["browserslist", "npm:4.23.3"],\
+          ["browserslist", "npm:4.24.0"],\
           ["escalade", "npm:3.2.0"],\
           ["picocolors", "npm:1.1.0"]\
         ],\
