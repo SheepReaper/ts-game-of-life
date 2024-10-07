@@ -43,31 +43,31 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@babel/code-frame", [\
-      ["npm:7.24.7", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@babel-code-frame-npm-7.24.7-315a600a58-10c0.zip/node_modules/@babel/code-frame/",\
+      ["npm:7.25.7", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@babel-code-frame-npm-7.25.7-40a9f53f43-10c0.zip/node_modules/@babel/code-frame/",\
         "packageDependencies": [\
-          ["@babel/code-frame", "npm:7.24.7"],\
-          ["@babel/highlight", "npm:7.24.7"],\
+          ["@babel/code-frame", "npm:7.25.7"],\
+          ["@babel/highlight", "npm:7.25.7"],\
           ["picocolors", "npm:1.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@babel/helper-validator-identifier", [\
-      ["npm:7.24.7", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@babel-helper-validator-identifier-npm-7.24.7-748889c8d2-10c0.zip/node_modules/@babel/helper-validator-identifier/",\
+      ["npm:7.25.7", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@babel-helper-validator-identifier-npm-7.25.7-1c758f0472-10c0.zip/node_modules/@babel/helper-validator-identifier/",\
         "packageDependencies": [\
-          ["@babel/helper-validator-identifier", "npm:7.24.7"]\
+          ["@babel/helper-validator-identifier", "npm:7.25.7"]\
         ],\
         "linkType": "HARD"\
       }]\
     ]],\
     ["@babel/highlight", [\
-      ["npm:7.24.7", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@babel-highlight-npm-7.24.7-d792bd8d9f-10c0.zip/node_modules/@babel/highlight/",\
+      ["npm:7.25.7", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@babel-highlight-npm-7.25.7-308b20da71-10c0.zip/node_modules/@babel/highlight/",\
         "packageDependencies": [\
-          ["@babel/highlight", "npm:7.24.7"],\
-          ["@babel/helper-validator-identifier", "npm:7.24.7"],\
+          ["@babel/highlight", "npm:7.25.7"],\
+          ["@babel/helper-validator-identifier", "npm:7.25.7"],\
           ["chalk", "npm:2.4.2"],\
           ["js-tokens", "npm:4.0.0"],\
           ["picocolors", "npm:1.1.0"]\
@@ -203,10 +203,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@lezer/common", [\
-      ["npm:1.2.1", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@lezer-common-npm-1.2.1-12848e21a7-10c0.zip/node_modules/@lezer/common/",\
+      ["npm:1.2.2", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@lezer-common-npm-1.2.2-6e474a44df-10c0.zip/node_modules/@lezer/common/",\
         "packageDependencies": [\
-          ["@lezer/common", "npm:1.2.1"]\
+          ["@lezer/common", "npm:1.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -216,7 +216,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../cache/others/berry/cache/@lezer-lr-npm-1.4.2-3bce75dd47-10c0.zip/node_modules/@lezer/lr/",\
         "packageDependencies": [\
           ["@lezer/lr", "npm:1.4.2"],\
-          ["@lezer/common", "npm:1.2.1"]\
+          ["@lezer/common", "npm:1.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -280,7 +280,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../cache/others/berry/cache/@mischnic-json-sourcemap-npm-0.1.1-eed67dd6e4-10c0.zip/node_modules/@mischnic/json-sourcemap/",\
         "packageDependencies": [\
           ["@mischnic/json-sourcemap", "npm:0.1.1"],\
-          ["@lezer/common", "npm:1.2.1"],\
+          ["@lezer/common", "npm:1.2.2"],\
           ["@lezer/lr", "npm:1.4.2"],\
           ["json5", "npm:2.2.3"]\
         ],\
@@ -1401,7 +1401,7 @@ const RAW_RUNTIME_STATE =
           ["@swc/core-win32-x64-msvc", "npm:1.7.28"],\
           ["@swc/counter", "npm:0.1.3"],\
           ["@swc/helpers", null],\
-          ["@swc/types", "npm:0.1.12"],\
+          ["@swc/types", "npm:0.1.13"],\
           ["@types/swc__helpers", null]\
         ],\
         "packagePeers": [\
@@ -1521,10 +1521,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["@swc/types", [\
-      ["npm:0.1.12", {\
-        "packageLocation": "../../../../cache/others/berry/cache/@swc-types-npm-0.1.12-b2a580c180-10c0.zip/node_modules/@swc/types/",\
+      ["npm:0.1.13", {\
+        "packageLocation": "../../../../cache/others/berry/cache/@swc-types-npm-0.1.13-8acf52e676-10c0.zip/node_modules/@swc/types/",\
         "packageDependencies": [\
-          ["@swc/types", "npm:0.1.12"],\
+          ["@swc/types", "npm:0.1.13"],\
           ["@swc/counter", "npm:0.1.3"]\
         ],\
         "linkType": "HARD"\
@@ -2008,8 +2008,8 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../cache/others/berry/cache/browserslist-npm-4.24.0-6b67324c87-10c0.zip/node_modules/browserslist/",\
         "packageDependencies": [\
           ["browserslist", "npm:4.24.0"],\
-          ["caniuse-lite", "npm:1.0.30001664"],\
-          ["electron-to-chromium", "npm:1.5.29"],\
+          ["caniuse-lite", "npm:1.0.30001667"],\
+          ["electron-to-chromium", "npm:1.5.32"],\
           ["node-releases", "npm:2.0.18"],\
           ["update-browserslist-db", "virtual:6b67324c878ea06e56ed3caefea53f7683e6ecc2f59a5ccb4eed038528684d5d9ad5763adbad2b939021498b8316c469d622a567bb66012ffd14e8022cf45739#npm:1.1.1"]\
         ],\
@@ -2047,10 +2047,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["caniuse-lite", [\
-      ["npm:1.0.30001664", {\
-        "packageLocation": "../../../../cache/others/berry/cache/caniuse-lite-npm-1.0.30001664-55249fe665-10c0.zip/node_modules/caniuse-lite/",\
+      ["npm:1.0.30001667", {\
+        "packageLocation": "../../../../cache/others/berry/cache/caniuse-lite-npm-1.0.30001667-6dc99b360b-10c0.zip/node_modules/caniuse-lite/",\
         "packageDependencies": [\
-          ["caniuse-lite", "npm:1.0.30001664"]\
+          ["caniuse-lite", "npm:1.0.30001667"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2385,10 +2385,10 @@ const RAW_RUNTIME_STATE =
       }]\
     ]],\
     ["electron-to-chromium", [\
-      ["npm:1.5.29", {\
-        "packageLocation": "../../../../cache/others/berry/cache/electron-to-chromium-npm-1.5.29-07d56f9c50-10c0.zip/node_modules/electron-to-chromium/",\
+      ["npm:1.5.32", {\
+        "packageLocation": "../../../../cache/others/berry/cache/electron-to-chromium-npm-1.5.32-0ad6126270-10c0.zip/node_modules/electron-to-chromium/",\
         "packageDependencies": [\
-          ["electron-to-chromium", "npm:1.5.29"]\
+          ["electron-to-chromium", "npm:1.5.32"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3872,7 +3872,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../../cache/others/berry/cache/parse-json-npm-5.2.0-00a63b1199-10c0.zip/node_modules/parse-json/",\
         "packageDependencies": [\
           ["parse-json", "npm:5.2.0"],\
-          ["@babel/code-frame", "npm:7.24.7"],\
+          ["@babel/code-frame", "npm:7.25.7"],\
           ["error-ex", "npm:1.3.2"],\
           ["json-parse-even-better-errors", "npm:2.3.1"],\
           ["lines-and-columns", "npm:1.2.4"]\
