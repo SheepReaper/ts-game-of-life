@@ -16,7 +16,7 @@
     "p5": "1.11.1",
     "parcel": "2.13.0",
     "prettier": "3.3.3",
-    "typescript": "5.6.3"
+    "typescript": "5.7.2"
   },
   "packageManager": "yarn@4.5.2"
 }
