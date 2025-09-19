@@ -3144,10 +3144,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"p5@npm:1.11.9":
-  version: 1.11.9
-  resolution: "p5@npm:1.11.9"
-  checksum: 10c0/8723ef78b89eca1408c8e39d9045f763b717095a3ad24c526dcceb418edb940a07b0fed5814f41dbe13b9ba48aee4f8f479bc3cee2f1356936bec955cd792e89
+"p5@npm:1.11.10":
+  version: 1.11.10
+  resolution: "p5@npm:1.11.10"
+  checksum: 10c0/2c9947be5f64fa2fffd05f520ebefb8da28089365c0813d7b0c512248fd21d828057bef1adb31b8a060a04d15a6581655ea03dadd567f3450d12c9e247950261
   languageName: node
   linkType: hard
 
@@ -3660,7 +3660,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:7.18.0"
     eslint: "npm:8.57.1"
     eslint-config-prettier: "npm:9.1.2"
-    p5: "npm:1.11.9"
+    p5: "npm:1.11.10"
     parcel: "npm:2.14.2"
     prettier: "npm:3.5.3"
     typescript: "npm:5.8.3"
