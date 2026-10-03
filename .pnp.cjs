@@ -17,6 +17,7 @@ const RAW_RUNTIME_STATE =
   ],\
   "enableTopLevelFallback": true,\
   "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
+  "pnpZipBackend": "libzip",\
   "fallbackExclusionList": [\
     ["typescript-p5-template", ["workspace:."]]\
   ],\
@@ -37,7 +38,8 @@ const RAW_RUNTIME_STATE =
           ["p5", "npm:1.11.13"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.16.4"],\
           ["prettier", "npm:3.5.3"],\
-          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
+          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
+          ["typescript-p5-template", "workspace:."]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -192,8 +194,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.4.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@lezer-lr-npm-1.4.2-3bce75dd47-10c0.zip/node_modules/@lezer/lr/",\
         "packageDependencies": [\
-          ["@lezer/lr", "npm:1.4.2"],\
-          ["@lezer/common", "npm:1.2.3"]\
+          ["@lezer/common", "npm:1.2.3"],\
+          ["@lezer/lr", "npm:1.4.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -256,9 +258,9 @@ const RAW_RUNTIME_STATE =
       ["npm:0.1.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@mischnic-json-sourcemap-npm-0.1.1-eed67dd6e4-10c0.zip/node_modules/@mischnic/json-sourcemap/",\
         "packageDependencies": [\
-          ["@mischnic/json-sourcemap", "npm:0.1.1"],\
           ["@lezer/common", "npm:1.2.3"],\
           ["@lezer/lr", "npm:1.4.2"],\
+          ["@mischnic/json-sourcemap", "npm:0.1.1"],\
           ["json5", "npm:2.2.3"]\
         ],\
         "linkType": "HARD"\
@@ -342,8 +344,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.2.8", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@nodelib-fs.walk-npm-1.2.8-b4a89da548-10c0.zip/node_modules/@nodelib/fs.walk/",\
         "packageDependencies": [\
-          ["@nodelib/fs.walk", "npm:1.2.8"],\
           ["@nodelib/fs.scandir", "npm:2.1.5"],\
+          ["@nodelib/fs.walk", "npm:1.2.8"],\
           ["fastq", "npm:1.19.1"]\
         ],\
         "linkType": "HARD"\
@@ -477,9 +479,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:1d3c6736a0298fc666ba945a58ee7f8c27eff7c610475ad3d70833c886181038e8e6c36cfa9bbfd50212e727450edc0156fdd4f3cae55d944a77e430706c7fc1#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-config-default-virtual-90b3220aeb/7/runner/cache/others/berry/cache/@parcel-config-default-npm-2.16.4-91f5b0ddde-10c0.zip/node_modules/@parcel/config-default/",\
         "packageDependencies": [\
-          ["@parcel/config-default", "virtual:1d3c6736a0298fc666ba945a58ee7f8c27eff7c610475ad3d70833c886181038e8e6c36cfa9bbfd50212e727450edc0156fdd4f3cae55d944a77e430706c7fc1#npm:2.16.4"],\
           ["@parcel/bundler-default", "npm:2.16.4"],\
           ["@parcel/compressor-raw", "npm:2.16.4"],\
+          ["@parcel/config-default", "virtual:1d3c6736a0298fc666ba945a58ee7f8c27eff7c610475ad3d70833c886181038e8e6c36cfa9bbfd50212e727450edc0156fdd4f3cae55d944a77e430706c7fc1#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/namer-default", "npm:2.16.4"],\
           ["@parcel/optimizer-css", "npm:2.16.4"],\
@@ -494,7 +496,7 @@ const RAW_RUNTIME_STATE =
           ["@parcel/packager-svg", "npm:2.16.4"],\
           ["@parcel/packager-wasm", "npm:2.16.4"],\
           ["@parcel/reporter-dev-server", "npm:2.16.4"],\
-          ["@parcel/resolver-default", "npm:2.16.4"],\
+          ["@parcel/resolver-default", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/runtime-browser-hmr", "npm:2.16.4"],\
           ["@parcel/runtime-js", "npm:2.16.4"],\
           ["@parcel/runtime-rsc", "npm:2.16.4"],\
@@ -524,9 +526,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.14.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-core-npm-2.14.2-82874fc3ca-10c0.zip/node_modules/@parcel/core/",\
         "packageDependencies": [\
-          ["@parcel/core", "npm:2.14.2"],\
           ["@mischnic/json-sourcemap", "npm:0.1.1"],\
           ["@parcel/cache", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
+          ["@parcel/core", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@parcel/events", "npm:2.14.2"],\
           ["@parcel/feature-flags", "npm:2.14.2"],\
@@ -556,9 +558,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-core-npm-2.16.4-5f203ef506-10c0.zip/node_modules/@parcel/core/",\
         "packageDependencies": [\
-          ["@parcel/core", "npm:2.16.4"],\
           ["@mischnic/json-sourcemap", "npm:0.1.1"],\
           ["@parcel/cache", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
+          ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/events", "npm:2.16.4"],\
           ["@parcel/feature-flags", "npm:2.16.4"],\
@@ -590,8 +592,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.14.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-diagnostic-npm-2.14.2-d94ff46982-10c0.zip/node_modules/@parcel/diagnostic/",\
         "packageDependencies": [\
-          ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@mischnic/json-sourcemap", "npm:0.1.1"],\
+          ["@parcel/diagnostic", "npm:2.14.2"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -599,8 +601,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-diagnostic-npm-2.16.4-8963d77a14-10c0.zip/node_modules/@parcel/diagnostic/",\
         "packageDependencies": [\
-          ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@mischnic/json-sourcemap", "npm:0.1.1"],\
+          ["@parcel/diagnostic", "npm:2.16.4"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -662,30 +664,12 @@ const RAW_RUNTIME_STATE =
         ],\
         "linkType": "SOFT"\
       }],\
-      ["virtual:3f06b2fe704b8b5f936906ac1216d90c201736e63dbdeb28f31114d1d5740d563ff16adedc136d0fc248c0f9222cb90c3a6f95ac91e369a7488cd0ca1947152c#npm:2.16.4", {\
-        "packageLocation": "./.yarn/__virtual__/@parcel-fs-virtual-98d26d886b/7/runner/cache/others/berry/cache/@parcel-fs-npm-2.16.4-c10fd06224-10c0.zip/node_modules/@parcel/fs/",\
-        "packageDependencies": [\
-          ["@parcel/fs", "virtual:3f06b2fe704b8b5f936906ac1216d90c201736e63dbdeb28f31114d1d5740d563ff16adedc136d0fc248c0f9222cb90c3a6f95ac91e369a7488cd0ca1947152c#npm:2.16.4"],\
-          ["@parcel/core", "npm:2.14.2"],\
-          ["@parcel/feature-flags", "npm:2.16.4"],\
-          ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
-          ["@parcel/types-internal", "npm:2.16.4"],\
-          ["@parcel/utils", "npm:2.16.4"],\
-          ["@parcel/watcher", "npm:2.5.1"],\
-          ["@parcel/workers", "virtual:b6ce636e5ef2b27f0c60a78559a88ce5e5a44b32b7df69adac45da8126cf58008b1e828fa4d3b89a5a1a1471d912c0b8db32390d541c108562d01c15547c9bc8#npm:2.16.4"],\
-          ["@types/parcel__core", null]\
-        ],\
-        "packagePeers": [\
-          "@types/parcel__core"\
-        ],\
-        "linkType": "HARD"\
-      }],\
       ["virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-fs-virtual-2e54b19826/7/runner/cache/others/berry/cache/@parcel-fs-npm-2.16.4-c10fd06224-10c0.zip/node_modules/@parcel/fs/",\
         "packageDependencies": [\
-          ["@parcel/fs", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/feature-flags", "npm:2.16.4"],\
+          ["@parcel/fs", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/types-internal", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
@@ -702,9 +686,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-fs-virtual-f37435a7a0/7/runner/cache/others/berry/cache/@parcel-fs-npm-2.14.2-3c4217e362-10c0.zip/node_modules/@parcel/fs/",\
         "packageDependencies": [\
-          ["@parcel/fs", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
           ["@parcel/core", "npm:2.14.2"],\
           ["@parcel/feature-flags", "npm:2.14.2"],\
+          ["@parcel/fs", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
           ["@parcel/rust", "virtual:a1ad329d40629d3630ec6fc97969f792c3b54b582e88caa890194f6717a277422f03fed35daca64a83612def6fa734551b28ada5b4cef52061fe6c9e176a1b9b#npm:2.14.2"],\
           ["@parcel/types-internal", "npm:2.14.2"],\
           ["@parcel/utils", "npm:2.14.2"],\
@@ -723,8 +707,8 @@ const RAW_RUNTIME_STATE =
       ["npm:3.4.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-graph-npm-3.4.2-fdcf53f503-10c0.zip/node_modules/@parcel/graph/",\
         "packageDependencies": [\
-          ["@parcel/graph", "npm:3.4.2"],\
           ["@parcel/feature-flags", "npm:2.14.2"],\
+          ["@parcel/graph", "npm:3.4.2"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -732,8 +716,8 @@ const RAW_RUNTIME_STATE =
       ["npm:3.6.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-graph-npm-3.6.4-f77edbe667-10c0.zip/node_modules/@parcel/graph/",\
         "packageDependencies": [\
-          ["@parcel/graph", "npm:3.6.4"],\
           ["@parcel/feature-flags", "npm:2.16.4"],\
+          ["@parcel/graph", "npm:3.6.4"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
         "linkType": "HARD"\
@@ -743,18 +727,18 @@ const RAW_RUNTIME_STATE =
       ["npm:2.14.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-logger-npm-2.14.2-bde69e7ac3-10c0.zip/node_modules/@parcel/logger/",\
         "packageDependencies": [\
-          ["@parcel/logger", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
-          ["@parcel/events", "npm:2.14.2"]\
+          ["@parcel/events", "npm:2.14.2"],\
+          ["@parcel/logger", "npm:2.14.2"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-logger-npm-2.16.4-c03efb2ba9-10c0.zip/node_modules/@parcel/logger/",\
         "packageDependencies": [\
-          ["@parcel/logger", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
-          ["@parcel/events", "npm:2.16.4"]\
+          ["@parcel/events", "npm:2.16.4"],\
+          ["@parcel/logger", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -781,8 +765,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-namer-default-npm-2.16.4-ca7bddf018-10c0.zip/node_modules/@parcel/namer-default/",\
         "packageDependencies": [\
-          ["@parcel/namer-default", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
+          ["@parcel/namer-default", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -793,28 +777,54 @@ const RAW_RUNTIME_STATE =
       ["npm:3.5.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-node-resolver-core-npm-3.5.2-3f14021ae1-10c0.zip/node_modules/@parcel/node-resolver-core/",\
         "packageDependencies": [\
-          ["@parcel/node-resolver-core", "npm:3.5.2"],\
-          ["@mischnic/json-sourcemap", "npm:0.1.1"],\
-          ["@parcel/diagnostic", "npm:2.14.2"],\
-          ["@parcel/fs", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
-          ["@parcel/rust", "virtual:a1ad329d40629d3630ec6fc97969f792c3b54b582e88caa890194f6717a277422f03fed35daca64a83612def6fa734551b28ada5b4cef52061fe6c9e176a1b9b#npm:2.14.2"],\
-          ["@parcel/utils", "npm:2.14.2"],\
-          ["nullthrows", "npm:1.1.1"],\
-          ["semver", "npm:7.7.1"]\
+          ["@parcel/node-resolver-core", "npm:3.5.2"]\
         ],\
-        "linkType": "HARD"\
+        "linkType": "SOFT"\
       }],\
       ["npm:3.7.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-node-resolver-core-npm-3.7.4-3f06b2fe70-10c0.zip/node_modules/@parcel/node-resolver-core/",\
         "packageDependencies": [\
-          ["@parcel/node-resolver-core", "npm:3.7.4"],\
+          ["@parcel/node-resolver-core", "npm:3.7.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:445e674429e364fe7b9e6200eb36e8015ce27a68e3c9e4f29fc671f9d97d54d1ce819bcaf9beb157e9278dc00aa68ba3d158fa36b1bf0b27f88f9ca9d9d1524d#npm:3.7.4", {\
+        "packageLocation": "./.yarn/__virtual__/@parcel-node-resolver-core-virtual-d4bc39dda0/7/runner/cache/others/berry/cache/@parcel-node-resolver-core-npm-3.7.4-3f06b2fe70-10c0.zip/node_modules/@parcel/node-resolver-core/",\
+        "packageDependencies": [\
           ["@mischnic/json-sourcemap", "npm:0.1.1"],\
+          ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
-          ["@parcel/fs", "virtual:3f06b2fe704b8b5f936906ac1216d90c201736e63dbdeb28f31114d1d5740d563ff16adedc136d0fc248c0f9222cb90c3a6f95ac91e369a7488cd0ca1947152c#npm:2.16.4"],\
+          ["@parcel/fs", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
+          ["@parcel/node-resolver-core", "virtual:445e674429e364fe7b9e6200eb36e8015ce27a68e3c9e4f29fc671f9d97d54d1ce819bcaf9beb157e9278dc00aa68ba3d158fa36b1bf0b27f88f9ca9d9d1524d#npm:3.7.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
+          ["@types/parcel__core", null],\
           ["nullthrows", "npm:1.1.1"],\
           ["semver", "npm:7.7.2"]\
+        ],\
+        "packagePeers": [\
+          "@parcel/core",\
+          "@types/parcel__core"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:b0fa35a0fd6d5f51d5fbce5536af63cd85c79c3c246a32cea6367b3710b58cb76c898ad4bcf4f3705a20f2caf77f6cd06d033ee00fc79db9f3b888dc1d24c305#npm:3.5.2", {\
+        "packageLocation": "./.yarn/__virtual__/@parcel-node-resolver-core-virtual-fe43533639/7/runner/cache/others/berry/cache/@parcel-node-resolver-core-npm-3.5.2-3f14021ae1-10c0.zip/node_modules/@parcel/node-resolver-core/",\
+        "packageDependencies": [\
+          ["@mischnic/json-sourcemap", "npm:0.1.1"],\
+          ["@parcel/core", "npm:2.14.2"],\
+          ["@parcel/diagnostic", "npm:2.14.2"],\
+          ["@parcel/fs", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
+          ["@parcel/node-resolver-core", "virtual:b0fa35a0fd6d5f51d5fbce5536af63cd85c79c3c246a32cea6367b3710b58cb76c898ad4bcf4f3705a20f2caf77f6cd06d033ee00fc79db9f3b888dc1d24c305#npm:3.5.2"],\
+          ["@parcel/rust", "virtual:a1ad329d40629d3630ec6fc97969f792c3b54b582e88caa890194f6717a277422f03fed35daca64a83612def6fa734551b28ada5b4cef52061fe6c9e176a1b9b#npm:2.14.2"],\
+          ["@parcel/utils", "npm:2.14.2"],\
+          ["@types/parcel__core", null],\
+          ["nullthrows", "npm:1.1.1"],\
+          ["semver", "npm:7.7.1"]\
+        ],\
+        "packagePeers": [\
+          "@parcel/core",\
+          "@types/parcel__core"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -823,8 +833,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-optimizer-css-npm-2.16.4-b2201ecb91-10c0.zip/node_modules/@parcel/optimizer-css/",\
         "packageDependencies": [\
-          ["@parcel/optimizer-css", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
+          ["@parcel/optimizer-css", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.16.4"],\
@@ -858,9 +868,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-optimizer-image-virtual-d78c153933/7/runner/cache/others/berry/cache/@parcel-optimizer-image-npm-2.16.4-822050fdaa-10c0.zip/node_modules/@parcel/optimizer-image/",\
         "packageDependencies": [\
-          ["@parcel/optimizer-image", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
+          ["@parcel/optimizer-image", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
@@ -890,8 +900,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-optimizer-swc-npm-2.16.4-e7eebf7edf-10c0.zip/node_modules/@parcel/optimizer-swc/",\
         "packageDependencies": [\
-          ["@parcel/optimizer-swc", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
+          ["@parcel/optimizer-swc", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.16.4"],\
@@ -919,12 +929,12 @@ const RAW_RUNTIME_STATE =
       ["virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-package-manager-virtual-445e674429/7/runner/cache/others/berry/cache/@parcel-package-manager-npm-2.16.4-c403a68500-10c0.zip/node_modules/@parcel/package-manager/",\
         "packageDependencies": [\
-          ["@parcel/package-manager", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/fs", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@parcel/logger", "npm:2.16.4"],\
-          ["@parcel/node-resolver-core", "npm:3.7.4"],\
+          ["@parcel/node-resolver-core", "virtual:445e674429e364fe7b9e6200eb36e8015ce27a68e3c9e4f29fc671f9d97d54d1ce819bcaf9beb157e9278dc00aa68ba3d158fa36b1bf0b27f88f9ca9d9d1524d#npm:3.7.4"],\
+          ["@parcel/package-manager", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@parcel/types", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["@parcel/workers", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
@@ -941,12 +951,12 @@ const RAW_RUNTIME_STATE =
       ["virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-package-manager-virtual-b0fa35a0fd/7/runner/cache/others/berry/cache/@parcel-package-manager-npm-2.14.2-e190aa4c73-10c0.zip/node_modules/@parcel/package-manager/",\
         "packageDependencies": [\
-          ["@parcel/package-manager", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
           ["@parcel/core", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@parcel/fs", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
           ["@parcel/logger", "npm:2.14.2"],\
-          ["@parcel/node-resolver-core", "npm:3.5.2"],\
+          ["@parcel/node-resolver-core", "virtual:b0fa35a0fd6d5f51d5fbce5536af63cd85c79c3c246a32cea6367b3710b58cb76c898ad4bcf4f3705a20f2caf77f6cd06d033ee00fc79db9f3b888dc1d24c305#npm:3.5.2"],\
+          ["@parcel/package-manager", "virtual:82874fc3ca1d0bb2b99dc5e0c473c1f520e237d5e0c4b71264ecdb6c0e0257b748005532ef9c3421b7da74bcc29ab5978faf07e1f356ec374f595873ef7fb2eb#npm:2.14.2"],\
           ["@parcel/types", "npm:2.14.2"],\
           ["@parcel/utils", "npm:2.14.2"],\
           ["@parcel/workers", "virtual:84f63605b760a9a0ae825c06994acc4aba2cf1e357412ce84655873ccccf896148267e028156102076643d020de8fabcb78fef4dcb8678b957bf08cd0e4f2350#npm:2.14.2"],\
@@ -965,8 +975,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-packager-css-npm-2.16.4-eb881848cb-10c0.zip/node_modules/@parcel/packager-css/",\
         "packageDependencies": [\
-          ["@parcel/packager-css", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
+          ["@parcel/packager-css", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.16.4"],\
@@ -993,8 +1003,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-packager-js-npm-2.16.4-ba90fd61fc-10c0.zip/node_modules/@parcel/packager-js/",\
         "packageDependencies": [\
-          ["@parcel/packager-js", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
+          ["@parcel/packager-js", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
@@ -1061,9 +1071,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.14.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-profiler-npm-2.14.2-26b9f6da8a-10c0.zip/node_modules/@parcel/profiler/",\
         "packageDependencies": [\
-          ["@parcel/profiler", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@parcel/events", "npm:2.14.2"],\
+          ["@parcel/profiler", "npm:2.14.2"],\
           ["@parcel/types-internal", "npm:2.14.2"],\
           ["chrome-trace-event", "npm:1.0.4"]\
         ],\
@@ -1072,9 +1082,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-profiler-npm-2.16.4-47d3b6e08a-10c0.zip/node_modules/@parcel/profiler/",\
         "packageDependencies": [\
-          ["@parcel/profiler", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/events", "npm:2.16.4"],\
+          ["@parcel/profiler", "npm:2.16.4"],\
           ["@parcel/types-internal", "npm:2.16.4"],\
           ["chrome-trace-event", "npm:1.0.4"]\
         ],\
@@ -1085,8 +1095,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-reporter-cli-npm-2.16.4-adb3352598-10c0.zip/node_modules/@parcel/reporter-cli/",\
         "packageDependencies": [\
-          ["@parcel/reporter-cli", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/reporter-cli", "npm:2.16.4"],\
           ["@parcel/types", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["chalk", "npm:4.1.2"],\
@@ -1099,9 +1109,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-reporter-dev-server-npm-2.16.4-4bafb7a15d-10c0.zip/node_modules/@parcel/reporter-dev-server/",\
         "packageDependencies": [\
-          ["@parcel/reporter-dev-server", "npm:2.16.4"],\
           ["@parcel/codeframe", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/reporter-dev-server", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
           ["@parcel/utils", "npm:2.16.4"]\
         ],\
@@ -1112,8 +1122,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-reporter-tracer-npm-2.16.4-62ccfc2374-10c0.zip/node_modules/@parcel/reporter-tracer/",\
         "packageDependencies": [\
-          ["@parcel/reporter-tracer", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/reporter-tracer", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["chrome-trace-event", "npm:1.0.4"],\
           ["nullthrows", "npm:1.1.1"]\
@@ -1125,9 +1135,22 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-resolver-default-npm-2.16.4-7222db832a-10c0.zip/node_modules/@parcel/resolver-default/",\
         "packageDependencies": [\
-          ["@parcel/resolver-default", "npm:2.16.4"],\
-          ["@parcel/node-resolver-core", "npm:3.7.4"],\
-          ["@parcel/plugin", "npm:2.16.4"]\
+          ["@parcel/resolver-default", "npm:2.16.4"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4", {\
+        "packageLocation": "./.yarn/__virtual__/@parcel-resolver-default-virtual-37276a3fb0/7/runner/cache/others/berry/cache/@parcel-resolver-default-npm-2.16.4-7222db832a-10c0.zip/node_modules/@parcel/resolver-default/",\
+        "packageDependencies": [\
+          ["@parcel/core", "npm:2.16.4"],\
+          ["@parcel/node-resolver-core", "virtual:445e674429e364fe7b9e6200eb36e8015ce27a68e3c9e4f29fc671f9d97d54d1ce819bcaf9beb157e9278dc00aa68ba3d158fa36b1bf0b27f88f9ca9d9d1524d#npm:3.7.4"],\
+          ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/resolver-default", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
+          ["@types/parcel__core", null]\
+        ],\
+        "packagePeers": [\
+          "@parcel/core",\
+          "@types/parcel__core"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1136,8 +1159,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-runtime-browser-hmr-npm-2.16.4-97ee9702ae-10c0.zip/node_modules/@parcel/runtime-browser-hmr/",\
         "packageDependencies": [\
-          ["@parcel/runtime-browser-hmr", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/runtime-browser-hmr", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
@@ -1147,9 +1170,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-runtime-js-npm-2.16.4-39adab27dc-10c0.zip/node_modules/@parcel/runtime-js/",\
         "packageDependencies": [\
-          ["@parcel/runtime-js", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/runtime-js", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1160,8 +1183,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-runtime-rsc-npm-2.16.4-cc46085b51-10c0.zip/node_modules/@parcel/runtime-rsc/",\
         "packageDependencies": [\
-          ["@parcel/runtime-rsc", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/runtime-rsc", "npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["nullthrows", "npm:1.1.1"]\
@@ -1173,8 +1196,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-runtime-service-worker-npm-2.16.4-a482e849bc-10c0.zip/node_modules/@parcel/runtime-service-worker/",\
         "packageDependencies": [\
-          ["@parcel/runtime-service-worker", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/runtime-service-worker", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1317,10 +1340,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-babel-npm-2.16.4-8ab77a3e28-10c0.zip/node_modules/@parcel/transformer-babel/",\
         "packageDependencies": [\
-          ["@parcel/transformer-babel", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/transformer-babel", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["browserslist", "npm:4.26.2"],\
           ["json5", "npm:2.2.3"],\
@@ -1334,10 +1357,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-css-npm-2.16.4-5feb68c3cd-10c0.zip/node_modules/@parcel/transformer-css/",\
         "packageDependencies": [\
-          ["@parcel/transformer-css", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/transformer-css", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["browserslist", "npm:4.26.2"],\
           ["lightningcss", "npm:1.30.1"],\
@@ -1350,10 +1373,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-html-npm-2.16.4-3f6ac7d33f-10c0.zip/node_modules/@parcel/transformer-html/",\
         "packageDependencies": [\
-          ["@parcel/transformer-html", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
-          ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"]\
+          ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
+          ["@parcel/transformer-html", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1369,9 +1392,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-transformer-image-virtual-6a4b0bc944/7/runner/cache/others/berry/cache/@parcel-transformer-image-npm-2.16.4-b2d0bf266e-10c0.zip/node_modules/@parcel/transformer-image/",\
         "packageDependencies": [\
-          ["@parcel/transformer-image", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/transformer-image", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["@parcel/workers", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@types/parcel__core", null],\
@@ -1395,12 +1418,12 @@ const RAW_RUNTIME_STATE =
       ["virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-transformer-js-virtual-1008fc8222/7/runner/cache/others/berry/cache/@parcel-transformer-js-npm-2.16.4-2c18078e29-10c0.zip/node_modules/@parcel/transformer-js/",\
         "packageDependencies": [\
-          ["@parcel/transformer-js", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/transformer-js", "virtual:90b3220aebc906be845d8bd10a85c3ac924c271a3c7e4423e247704c2f5ab092a3155c43344f7c7166854efaff7f86fabf5ef5eb1655e8b6ff24839dcb44a3ff#npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["@parcel/workers", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@swc/helpers", "npm:0.5.15"],\
@@ -1421,8 +1444,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-json-npm-2.16.4-5eb4cf66ac-10c0.zip/node_modules/@parcel/transformer-json/",\
         "packageDependencies": [\
-          ["@parcel/transformer-json", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/transformer-json", "npm:2.16.4"],\
           ["json5", "npm:2.2.3"]\
         ],\
         "linkType": "HARD"\
@@ -1432,8 +1455,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-node-npm-2.16.4-fdadc47bc7-10c0.zip/node_modules/@parcel/transformer-node/",\
         "packageDependencies": [\
-          ["@parcel/transformer-node", "npm:2.16.4"],\
-          ["@parcel/plugin", "npm:2.16.4"]\
+          ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/transformer-node", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1442,10 +1465,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-postcss-npm-2.16.4-d87df83ca6-10c0.zip/node_modules/@parcel/transformer-postcss/",\
         "packageDependencies": [\
-          ["@parcel/transformer-postcss", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
+          ["@parcel/transformer-postcss", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["clone", "npm:2.1.2"],\
           ["nullthrows", "npm:1.1.1"],\
@@ -1459,8 +1482,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-posthtml-npm-2.16.4-46f680282f-10c0.zip/node_modules/@parcel/transformer-posthtml/",\
         "packageDependencies": [\
-          ["@parcel/transformer-posthtml", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/transformer-posthtml", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
@@ -1470,8 +1493,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-raw-npm-2.16.4-3e0f9035ff-10c0.zip/node_modules/@parcel/transformer-raw/",\
         "packageDependencies": [\
-          ["@parcel/transformer-raw", "npm:2.16.4"],\
-          ["@parcel/plugin", "npm:2.16.4"]\
+          ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/transformer-raw", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1480,9 +1503,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-react-refresh-wrap-npm-2.16.4-90c16bbc99-10c0.zip/node_modules/@parcel/transformer-react-refresh-wrap/",\
         "packageDependencies": [\
-          ["@parcel/transformer-react-refresh-wrap", "npm:2.16.4"],\
           ["@parcel/error-overlay", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
+          ["@parcel/transformer-react-refresh-wrap", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
           ["react-refresh", "npm:0.16.0"]\
         ],\
@@ -1493,10 +1516,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-transformer-svg-npm-2.16.4-66216e6f36-10c0.zip/node_modules/@parcel/transformer-svg/",\
         "packageDependencies": [\
-          ["@parcel/transformer-svg", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/plugin", "npm:2.16.4"],\
-          ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"]\
+          ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
+          ["@parcel/transformer-svg", "npm:2.16.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -1525,10 +1548,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.14.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-types-internal-npm-2.14.2-c87fe54434-10c0.zip/node_modules/@parcel/types-internal/",\
         "packageDependencies": [\
-          ["@parcel/types-internal", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@parcel/feature-flags", "npm:2.14.2"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/types-internal", "npm:2.14.2"],\
           ["utility-types", "npm:3.11.0"]\
         ],\
         "linkType": "HARD"\
@@ -1536,10 +1559,10 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-types-internal-npm-2.16.4-599e57aa95-10c0.zip/node_modules/@parcel/types-internal/",\
         "packageDependencies": [\
-          ["@parcel/types-internal", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/feature-flags", "npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/types-internal", "npm:2.16.4"],\
           ["utility-types", "npm:3.11.0"]\
         ],\
         "linkType": "HARD"\
@@ -1549,13 +1572,13 @@ const RAW_RUNTIME_STATE =
       ["npm:2.14.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-utils-npm-2.14.2-a1ad329d40-10c0.zip/node_modules/@parcel/utils/",\
         "packageDependencies": [\
-          ["@parcel/utils", "npm:2.14.2"],\
           ["@parcel/codeframe", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@parcel/logger", "npm:2.14.2"],\
           ["@parcel/markdown-ansi", "npm:2.14.2"],\
           ["@parcel/rust", "virtual:a1ad329d40629d3630ec6fc97969f792c3b54b582e88caa890194f6717a277422f03fed35daca64a83612def6fa734551b28ada5b4cef52061fe6c9e176a1b9b#npm:2.14.2"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/utils", "npm:2.14.2"],\
           ["chalk", "npm:4.1.2"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1564,13 +1587,13 @@ const RAW_RUNTIME_STATE =
       ["npm:2.16.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@parcel-utils-npm-2.16.4-9faab0131a-10c0.zip/node_modules/@parcel/utils/",\
         "packageDependencies": [\
-          ["@parcel/utils", "npm:2.16.4"],\
           ["@parcel/codeframe", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/logger", "npm:2.16.4"],\
           ["@parcel/markdown-ansi", "npm:2.16.4"],\
           ["@parcel/rust", "virtual:9faab0131ac37af382ac9bb469f0c2ffa7060a3526e128a0c53165a67cb0d35c33dead7e95d8a04d88aa5462b7be3486a5c6540a3d0168aabbe326c86a8f57d3#npm:2.16.4"],\
           ["@parcel/source-map", "npm:2.1.1"],\
+          ["@parcel/utils", "npm:2.16.4"],\
           ["chalk", "npm:4.1.2"],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1739,13 +1762,13 @@ const RAW_RUNTIME_STATE =
       ["virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-workers-virtual-388af2dfd6/7/runner/cache/others/berry/cache/@parcel-workers-npm-2.16.4-32aaf34d0b-10c0.zip/node_modules/@parcel/workers/",\
         "packageDependencies": [\
-          ["@parcel/workers", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/logger", "npm:2.16.4"],\
           ["@parcel/profiler", "npm:2.16.4"],\
           ["@parcel/types-internal", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
+          ["@parcel/workers", "virtual:5f203ef5068360cb92b05e3963efd7fb66264a30bba9f82dbec6eb830f80259be87d04e02ac642b8b6fbbb7d41eed3a72d11b6ea5c4839c8532a381a4aed767e#npm:2.16.4"],\
           ["@types/parcel__core", null],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1758,13 +1781,13 @@ const RAW_RUNTIME_STATE =
       ["virtual:84f63605b760a9a0ae825c06994acc4aba2cf1e357412ce84655873ccccf896148267e028156102076643d020de8fabcb78fef4dcb8678b957bf08cd0e4f2350#npm:2.14.2", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-workers-virtual-8596e794a2/7/runner/cache/others/berry/cache/@parcel-workers-npm-2.14.2-3d697beb06-10c0.zip/node_modules/@parcel/workers/",\
         "packageDependencies": [\
-          ["@parcel/workers", "virtual:84f63605b760a9a0ae825c06994acc4aba2cf1e357412ce84655873ccccf896148267e028156102076643d020de8fabcb78fef4dcb8678b957bf08cd0e4f2350#npm:2.14.2"],\
           ["@parcel/core", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.14.2"],\
           ["@parcel/logger", "npm:2.14.2"],\
           ["@parcel/profiler", "npm:2.14.2"],\
           ["@parcel/types-internal", "npm:2.14.2"],\
           ["@parcel/utils", "npm:2.14.2"],\
+          ["@parcel/workers", "virtual:84f63605b760a9a0ae825c06994acc4aba2cf1e357412ce84655873ccccf896148267e028156102076643d020de8fabcb78fef4dcb8678b957bf08cd0e4f2350#npm:2.14.2"],\
           ["@types/parcel__core", null],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -1776,13 +1799,13 @@ const RAW_RUNTIME_STATE =
       ["virtual:b6ce636e5ef2b27f0c60a78559a88ce5e5a44b32b7df69adac45da8126cf58008b1e828fa4d3b89a5a1a1471d912c0b8db32390d541c108562d01c15547c9bc8#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/@parcel-workers-virtual-b74d025418/7/runner/cache/others/berry/cache/@parcel-workers-npm-2.16.4-32aaf34d0b-10c0.zip/node_modules/@parcel/workers/",\
         "packageDependencies": [\
-          ["@parcel/workers", "virtual:b6ce636e5ef2b27f0c60a78559a88ce5e5a44b32b7df69adac45da8126cf58008b1e828fa4d3b89a5a1a1471d912c0b8db32390d541c108562d01c15547c9bc8#npm:2.16.4"],\
           ["@parcel/core", "npm:2.14.2"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
           ["@parcel/logger", "npm:2.16.4"],\
           ["@parcel/profiler", "npm:2.16.4"],\
           ["@parcel/types-internal", "npm:2.16.4"],\
           ["@parcel/utils", "npm:2.16.4"],\
+          ["@parcel/workers", "virtual:b6ce636e5ef2b27f0c60a78559a88ce5e5a44b32b7df69adac45da8126cf58008b1e828fa4d3b89a5a1a1471d912c0b8db32390d541c108562d01c15547c9bc8#npm:2.16.4"],\
           ["@types/parcel__core", null],\
           ["nullthrows", "npm:1.1.1"]\
         ],\
@@ -2050,16 +2073,16 @@ const RAW_RUNTIME_STATE =
       ["npm:0.1.20", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@swc-types-npm-0.1.20-20b7f4ed1a-10c0.zip/node_modules/@swc/types/",\
         "packageDependencies": [\
-          ["@swc/types", "npm:0.1.20"],\
-          ["@swc/counter", "npm:0.1.3"]\
+          ["@swc/counter", "npm:0.1.3"],\
+          ["@swc/types", "npm:0.1.20"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:0.1.25", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@swc-types-npm-0.1.25-8a74ae00bc-10c0.zip/node_modules/@swc/types/",\
         "packageDependencies": [\
-          ["@swc/types", "npm:0.1.25"],\
-          ["@swc/counter", "npm:0.1.3"]\
+          ["@swc/counter", "npm:0.1.3"],\
+          ["@swc/types", "npm:0.1.25"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2123,11 +2146,11 @@ const RAW_RUNTIME_STATE =
       ["virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0", {\
         "packageLocation": "./.yarn/__virtual__/@typescript-eslint-eslint-plugin-virtual-cbac959875/7/runner/cache/others/berry/cache/@typescript-eslint-eslint-plugin-npm-7.18.0-f1d556a934-10c0.zip/node_modules/@typescript-eslint/eslint-plugin/",\
         "packageDependencies": [\
-          ["@typescript-eslint/eslint-plugin", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["@eslint-community/regexpp", "npm:4.12.1"],\
           ["@types/eslint", "npm:8.56.12"],\
           ["@types/typescript", null],\
           ["@types/typescript-eslint__parser", null],\
+          ["@typescript-eslint/eslint-plugin", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["@typescript-eslint/scope-manager", "npm:7.18.0"],\
           ["@typescript-eslint/type-utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0"],\
@@ -2162,9 +2185,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0", {\
         "packageLocation": "./.yarn/__virtual__/@typescript-eslint-parser-virtual-bc5a14af18/7/runner/cache/others/berry/cache/@typescript-eslint-parser-npm-7.18.0-df2ed0084c-10c0.zip/node_modules/@typescript-eslint/parser/",\
         "packageDependencies": [\
-          ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["@types/eslint", "npm:8.56.12"],\
           ["@types/typescript", null],\
+          ["@typescript-eslint/parser", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:7.18.0"],\
           ["@typescript-eslint/scope-manager", "npm:7.18.0"],\
           ["@typescript-eslint/types", "npm:7.18.0"],\
           ["@typescript-eslint/typescript-estree", "virtual:52617a1f5d50e45cdfa3d13ace0a4afa7a2822fda4f1c8a189d98e56fab30a57a234831e5f68ca721d17cc91f9a064cba30f2ca51d662b27966f7a4e32f47f38#npm:7.18.0"],\
@@ -2204,9 +2227,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0", {\
         "packageLocation": "./.yarn/__virtual__/@typescript-eslint-type-utils-virtual-52617a1f5d/7/runner/cache/others/berry/cache/@typescript-eslint-type-utils-npm-7.18.0-acee9c858d-10c0.zip/node_modules/@typescript-eslint/type-utils/",\
         "packageDependencies": [\
-          ["@typescript-eslint/type-utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0"],\
           ["@types/eslint", "npm:8.56.12"],\
           ["@types/typescript", null],\
+          ["@typescript-eslint/type-utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0"],\
           ["@typescript-eslint/typescript-estree", "virtual:52617a1f5d50e45cdfa3d13ace0a4afa7a2822fda4f1c8a189d98e56fab30a57a234831e5f68ca721d17cc91f9a064cba30f2ca51d662b27966f7a4e32f47f38#npm:7.18.0"],\
           ["@typescript-eslint/utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0"],\
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
@@ -2243,9 +2266,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:52617a1f5d50e45cdfa3d13ace0a4afa7a2822fda4f1c8a189d98e56fab30a57a234831e5f68ca721d17cc91f9a064cba30f2ca51d662b27966f7a4e32f47f38#npm:7.18.0", {\
         "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-3d23202903/7/runner/cache/others/berry/cache/@typescript-eslint-typescript-estree-npm-7.18.0-ce673565ca-10c0.zip/node_modules/@typescript-eslint/typescript-estree/",\
         "packageDependencies": [\
-          ["@typescript-eslint/typescript-estree", "virtual:52617a1f5d50e45cdfa3d13ace0a4afa7a2822fda4f1c8a189d98e56fab30a57a234831e5f68ca721d17cc91f9a064cba30f2ca51d662b27966f7a4e32f47f38#npm:7.18.0"],\
           ["@types/typescript", null],\
           ["@typescript-eslint/types", "npm:7.18.0"],\
+          ["@typescript-eslint/typescript-estree", "virtual:52617a1f5d50e45cdfa3d13ace0a4afa7a2822fda4f1c8a189d98e56fab30a57a234831e5f68ca721d17cc91f9a064cba30f2ca51d662b27966f7a4e32f47f38#npm:7.18.0"],\
           ["@typescript-eslint/visitor-keys", "npm:7.18.0"],\
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
           ["globby", "npm:11.1.0"],\
@@ -2264,9 +2287,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:e51b9ce746a2ebbec6257402e2023c71b8606f018d691a58032c240913bc6489768f864dce1987f62a24a95a2d03cd08d48b101586967684379dcc76fe97a9da#npm:7.18.0", {\
         "packageLocation": "./.yarn/__virtual__/@typescript-eslint-typescript-estree-virtual-007eea883f/7/runner/cache/others/berry/cache/@typescript-eslint-typescript-estree-npm-7.18.0-ce673565ca-10c0.zip/node_modules/@typescript-eslint/typescript-estree/",\
         "packageDependencies": [\
-          ["@typescript-eslint/typescript-estree", "virtual:e51b9ce746a2ebbec6257402e2023c71b8606f018d691a58032c240913bc6489768f864dce1987f62a24a95a2d03cd08d48b101586967684379dcc76fe97a9da#npm:7.18.0"],\
           ["@types/typescript", null],\
           ["@typescript-eslint/types", "npm:7.18.0"],\
+          ["@typescript-eslint/typescript-estree", "virtual:e51b9ce746a2ebbec6257402e2023c71b8606f018d691a58032c240913bc6489768f864dce1987f62a24a95a2d03cd08d48b101586967684379dcc76fe97a9da#npm:7.18.0"],\
           ["@typescript-eslint/visitor-keys", "npm:7.18.0"],\
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
           ["globby", "npm:11.1.0"],\
@@ -2294,12 +2317,12 @@ const RAW_RUNTIME_STATE =
       ["virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0", {\
         "packageLocation": "./.yarn/__virtual__/@typescript-eslint-utils-virtual-e51b9ce746/7/runner/cache/others/berry/cache/@typescript-eslint-utils-npm-7.18.0-d11315a14c-10c0.zip/node_modules/@typescript-eslint/utils/",\
         "packageDependencies": [\
-          ["@typescript-eslint/utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0"],\
           ["@eslint-community/eslint-utils", "virtual:e51b9ce746a2ebbec6257402e2023c71b8606f018d691a58032c240913bc6489768f864dce1987f62a24a95a2d03cd08d48b101586967684379dcc76fe97a9da#npm:4.5.1"],\
           ["@types/eslint", "npm:8.56.12"],\
           ["@typescript-eslint/scope-manager", "npm:7.18.0"],\
           ["@typescript-eslint/types", "npm:7.18.0"],\
           ["@typescript-eslint/typescript-estree", "virtual:e51b9ce746a2ebbec6257402e2023c71b8606f018d691a58032c240913bc6489768f864dce1987f62a24a95a2d03cd08d48b101586967684379dcc76fe97a9da#npm:7.18.0"],\
+          ["@typescript-eslint/utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:7.18.0"],\
           ["eslint", "npm:8.57.1"]\
         ],\
         "packagePeers": [\
@@ -2313,8 +2336,8 @@ const RAW_RUNTIME_STATE =
       ["npm:7.18.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/@typescript-eslint-visitor-keys-npm-7.18.0-8b4d3089ad-10c0.zip/node_modules/@typescript-eslint/visitor-keys/",\
         "packageDependencies": [\
-          ["@typescript-eslint/visitor-keys", "npm:7.18.0"],\
           ["@typescript-eslint/types", "npm:7.18.0"],\
+          ["@typescript-eslint/visitor-keys", "npm:7.18.0"],\
           ["eslint-visitor-keys", "npm:3.4.3"]\
         ],\
         "linkType": "HARD"\
@@ -2358,9 +2381,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2", {\
         "packageLocation": "./.yarn/__virtual__/acorn-jsx-virtual-834321b202/7/runner/cache/others/berry/cache/acorn-jsx-npm-5.3.2-d7594599ea-10c0.zip/node_modules/acorn-jsx/",\
         "packageDependencies": [\
-          ["acorn-jsx", "virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2"],\
           ["@types/acorn", null],\
-          ["acorn", "npm:8.14.1"]\
+          ["acorn", "npm:8.14.1"],\
+          ["acorn-jsx", "virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2"]\
         ],\
         "packagePeers": [\
           "@types/acorn",\
@@ -2474,8 +2497,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.1.11", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/brace-expansion-npm-1.1.11-fb95eb05ad-10c0.zip/node_modules/brace-expansion/",\
         "packageDependencies": [\
-          ["brace-expansion", "npm:1.1.11"],\
           ["balanced-match", "npm:1.0.2"],\
+          ["brace-expansion", "npm:1.1.11"],\
           ["concat-map", "npm:0.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -2483,8 +2506,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/brace-expansion-npm-2.0.1-17aa2616f9-10c0.zip/node_modules/brace-expansion/",\
         "packageDependencies": [\
-          ["brace-expansion", "npm:2.0.1"],\
-          ["balanced-match", "npm:1.0.2"]\
+          ["balanced-match", "npm:1.0.2"],\
+          ["brace-expansion", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2514,8 +2537,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.26.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/browserslist-npm-4.26.2-713d4a89d1-10c0.zip/node_modules/browserslist/",\
         "packageDependencies": [\
-          ["browserslist", "npm:4.26.2"],\
           ["baseline-browser-mapping", "npm:2.8.8"],\
+          ["browserslist", "npm:4.26.2"],\
           ["caniuse-lite", "npm:1.0.30001745"],\
           ["electron-to-chromium", "npm:1.5.227"],\
           ["node-releases", "npm:2.0.21"],\
@@ -2528,8 +2551,8 @@ const RAW_RUNTIME_STATE =
       ["npm:19.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/cacache-npm-19.0.1-395cba1936-10c0.zip/node_modules/cacache/",\
         "packageDependencies": [\
-          ["cacache", "npm:19.0.1"],\
           ["@npmcli/fs", "npm:4.0.0"],\
+          ["cacache", "npm:19.0.1"],\
           ["fs-minipass", "npm:3.0.3"],\
           ["glob", "npm:10.4.5"],\
           ["lru-cache", "npm:10.4.3"],\
@@ -2574,8 +2597,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.1.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/chalk-npm-4.1.2-ba8b67ab80-10c0.zip/node_modules/chalk/",\
         "packageDependencies": [\
-          ["chalk", "npm:4.1.2"],\
           ["ansi-styles", "npm:4.3.0"],\
+          ["chalk", "npm:4.1.2"],\
           ["supports-color", "npm:7.2.0"]\
         ],\
         "linkType": "HARD"\
@@ -2668,8 +2691,8 @@ const RAW_RUNTIME_STATE =
       ["virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0", {\
         "packageLocation": "./.yarn/__virtual__/debug-virtual-f437ff66a8/7/runner/cache/others/berry/cache/debug-npm-4.4.0-f6efe76023-10c0.zip/node_modules/debug/",\
         "packageDependencies": [\
-          ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
           ["@types/supports-color", null],\
+          ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
           ["ms", "npm:2.1.3"],\
           ["supports-color", null]\
         ],\
@@ -2745,8 +2768,8 @@ const RAW_RUNTIME_STATE =
       ["npm:11.0.7", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/dotenv-expand-npm-11.0.7-3d83888ae0-10c0.zip/node_modules/dotenv-expand/",\
         "packageDependencies": [\
-          ["dotenv-expand", "npm:11.0.7"],\
-          ["dotenv", "npm:16.4.7"]\
+          ["dotenv", "npm:16.4.7"],\
+          ["dotenv-expand", "npm:11.0.7"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2842,7 +2865,6 @@ const RAW_RUNTIME_STATE =
       ["npm:8.57.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/eslint-npm-8.57.1-dd20287a5a-10c0.zip/node_modules/eslint/",\
         "packageDependencies": [\
-          ["eslint", "npm:8.57.1"],\
           ["@eslint-community/eslint-utils", "virtual:dd20287a5a1e86b12a5b04609f98bd729fafd847d08e1fc89cdc68f92d1acf209e53b09ef0af4b6e7781d88e1f9acf94e3bf34619939e434ad5ffb0f24855eb4#npm:4.5.1"],\
           ["@eslint-community/regexpp", "npm:4.12.1"],\
           ["@eslint/eslintrc", "npm:2.1.4"],\
@@ -2857,6 +2879,7 @@ const RAW_RUNTIME_STATE =
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
           ["doctrine", "npm:3.0.0"],\
           ["escape-string-regexp", "npm:4.0.0"],\
+          ["eslint", "npm:8.57.1"],\
           ["eslint-scope", "npm:7.2.2"],\
           ["eslint-visitor-keys", "npm:3.4.3"],\
           ["espree", "npm:9.6.1"],\
@@ -2896,9 +2919,9 @@ const RAW_RUNTIME_STATE =
       ["virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.2", {\
         "packageLocation": "./.yarn/__virtual__/eslint-config-prettier-virtual-bc43570a3d/7/runner/cache/others/berry/cache/eslint-config-prettier-npm-9.1.2-b8992b2c8c-10c0.zip/node_modules/eslint-config-prettier/",\
         "packageDependencies": [\
-          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.2"],\
           ["@types/eslint", "npm:8.56.12"],\
-          ["eslint", "npm:8.57.1"]\
+          ["eslint", "npm:8.57.1"],\
+          ["eslint-config-prettier", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:9.1.2"]\
         ],\
         "packagePeers": [\
           "@types/eslint",\
@@ -2931,10 +2954,10 @@ const RAW_RUNTIME_STATE =
       ["npm:9.6.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/espree-npm-9.6.1-a50722a5a9-10c0.zip/node_modules/espree/",\
         "packageDependencies": [\
-          ["espree", "npm:9.6.1"],\
           ["acorn", "npm:8.14.1"],\
           ["acorn-jsx", "virtual:a50722a5a9326b6a5f12350c494c4db3aa0f4caeac45e3e9e5fe071da20014ecfe738fe2ebe2c9c98abae81a4ea86b42f56d776b3bd5ec37f9ad3670c242b242#npm:5.3.2"],\
-          ["eslint-visitor-keys", "npm:3.4.3"]\
+          ["eslint-visitor-keys", "npm:3.4.3"],\
+          ["espree", "npm:9.6.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -2999,9 +3022,9 @@ const RAW_RUNTIME_STATE =
       ["npm:3.3.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/fast-glob-npm-3.3.3-2a653be532-10c0.zip/node_modules/fast-glob/",\
         "packageDependencies": [\
-          ["fast-glob", "npm:3.3.3"],\
           ["@nodelib/fs.stat", "npm:2.0.5"],\
           ["@nodelib/fs.walk", "npm:1.2.8"],\
+          ["fast-glob", "npm:3.3.3"],\
           ["glob-parent", "npm:5.1.2"],\
           ["merge2", "npm:1.4.1"],\
           ["micromatch", "npm:4.0.8"]\
@@ -3093,8 +3116,8 @@ const RAW_RUNTIME_STATE =
       ["npm:3.3.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/foreground-child-npm-3.3.1-b7775fda04-10c0.zip/node_modules/foreground-child/",\
         "packageDependencies": [\
-          ["foreground-child", "npm:3.3.1"],\
           ["cross-spawn", "npm:7.0.6"],\
+          ["foreground-child", "npm:3.3.1"],\
           ["signal-exit", "npm:4.1.0"]\
         ],\
         "linkType": "HARD"\
@@ -3132,8 +3155,8 @@ const RAW_RUNTIME_STATE =
       ["npm:10.4.5", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/glob-npm-10.4.5-8c63175f05-10c0.zip/node_modules/glob/",\
         "packageDependencies": [\
-          ["glob", "npm:10.4.5"],\
           ["foreground-child", "npm:3.3.1"],\
+          ["glob", "npm:10.4.5"],\
           ["jackspeak", "npm:3.4.3"],\
           ["minimatch", "npm:9.0.5"],\
           ["minipass", "npm:7.1.2"],\
@@ -3145,8 +3168,8 @@ const RAW_RUNTIME_STATE =
       ["npm:7.2.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/glob-npm-7.2.3-2d866d17a5-10c0.zip/node_modules/glob/",\
         "packageDependencies": [\
-          ["glob", "npm:7.2.3"],\
           ["fs.realpath", "npm:1.0.0"],\
+          ["glob", "npm:7.2.3"],\
           ["inflight", "npm:1.0.6"],\
           ["inherits", "npm:2.0.4"],\
           ["minimatch", "npm:3.1.2"],\
@@ -3188,10 +3211,10 @@ const RAW_RUNTIME_STATE =
       ["npm:11.1.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/globby-npm-11.1.0-bdcdf20c71-10c0.zip/node_modules/globby/",\
         "packageDependencies": [\
-          ["globby", "npm:11.1.0"],\
           ["array-union", "npm:2.1.0"],\
           ["dir-glob", "npm:3.0.1"],\
           ["fast-glob", "npm:3.3.3"],\
+          ["globby", "npm:11.1.0"],\
           ["ignore", "npm:5.3.2"],\
           ["merge2", "npm:1.4.1"],\
           ["slash", "npm:3.0.0"]\
@@ -3239,9 +3262,9 @@ const RAW_RUNTIME_STATE =
       ["npm:7.0.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/http-proxy-agent-npm-7.0.2-643ed7cc33-10c0.zip/node_modules/http-proxy-agent/",\
         "packageDependencies": [\
-          ["http-proxy-agent", "npm:7.0.2"],\
           ["agent-base", "npm:7.1.3"],\
-          ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"]\
+          ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
+          ["http-proxy-agent", "npm:7.0.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3250,9 +3273,9 @@ const RAW_RUNTIME_STATE =
       ["npm:7.0.6", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/https-proxy-agent-npm-7.0.6-27a95c2690-10c0.zip/node_modules/https-proxy-agent/",\
         "packageDependencies": [\
-          ["https-proxy-agent", "npm:7.0.6"],\
           ["agent-base", "npm:7.1.3"],\
-          ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"]\
+          ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
+          ["https-proxy-agent", "npm:7.0.6"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3349,8 +3372,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.0.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/is-glob-npm-4.0.3-cb87bf1bdb-10c0.zip/node_modules/is-glob/",\
         "packageDependencies": [\
-          ["is-glob", "npm:4.0.3"],\
-          ["is-extglob", "npm:2.1.1"]\
+          ["is-extglob", "npm:2.1.1"],\
+          ["is-glob", "npm:4.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3393,9 +3416,9 @@ const RAW_RUNTIME_STATE =
       ["npm:3.4.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/jackspeak-npm-3.4.3-546bfad080-10c0.zip/node_modules/jackspeak/",\
         "packageDependencies": [\
-          ["jackspeak", "npm:3.4.3"],\
           ["@isaacs/cliui", "npm:8.0.2"],\
-          ["@pkgjs/parseargs", "npm:0.11.0"]\
+          ["@pkgjs/parseargs", "npm:0.11.0"],\
+          ["jackspeak", "npm:3.4.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3404,8 +3427,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.1.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/js-yaml-npm-4.1.0-3606f32312-10c0.zip/node_modules/js-yaml/",\
         "packageDependencies": [\
-          ["js-yaml", "npm:4.1.0"],\
-          ["argparse", "npm:2.0.1"]\
+          ["argparse", "npm:2.0.1"],\
+          ["js-yaml", "npm:4.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3459,8 +3482,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.5.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/keyv-npm-4.5.4-4c8e2cf7f7-10c0.zip/node_modules/keyv/",\
         "packageDependencies": [\
-          ["keyv", "npm:4.5.4"],\
-          ["json-buffer", "npm:3.0.1"]\
+          ["json-buffer", "npm:3.0.1"],\
+          ["keyv", "npm:4.5.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3480,8 +3503,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.30.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/lightningcss-npm-1.30.1-d177e9dceb-10c0.zip/node_modules/lightningcss/",\
         "packageDependencies": [\
-          ["lightningcss", "npm:1.30.1"],\
           ["detect-libc", "npm:2.0.3"],\
+          ["lightningcss", "npm:1.30.1"],\
           ["lightningcss-darwin-arm64", "npm:1.30.1"],\
           ["lightningcss-darwin-x64", "npm:1.30.1"],\
           ["lightningcss-freebsd-x64", "npm:1.30.1"],\
@@ -3590,13 +3613,13 @@ const RAW_RUNTIME_STATE =
       ["npm:2.8.5", {\
         "packageLocation": "./.yarn/unplugged/lmdb-npm-2.8.5-e5fdd937dd/node_modules/lmdb/",\
         "packageDependencies": [\
-          ["lmdb", "npm:2.8.5"],\
           ["@lmdb/lmdb-darwin-arm64", "npm:2.8.5"],\
           ["@lmdb/lmdb-darwin-x64", "npm:2.8.5"],\
           ["@lmdb/lmdb-linux-arm", "npm:2.8.5"],\
           ["@lmdb/lmdb-linux-arm64", "npm:2.8.5"],\
           ["@lmdb/lmdb-linux-x64", "npm:2.8.5"],\
           ["@lmdb/lmdb-win32-x64", "npm:2.8.5"],\
+          ["lmdb", "npm:2.8.5"],\
           ["msgpackr", "npm:1.11.2"],\
           ["node-addon-api", "npm:6.1.0"],\
           ["node-gyp", "npm:11.1.0"],\
@@ -3639,10 +3662,10 @@ const RAW_RUNTIME_STATE =
       ["npm:14.0.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/make-fetch-happen-npm-14.0.3-23b30e8691-10c0.zip/node_modules/make-fetch-happen/",\
         "packageDependencies": [\
-          ["make-fetch-happen", "npm:14.0.3"],\
           ["@npmcli/agent", "npm:3.0.0"],\
           ["cacache", "npm:19.0.1"],\
           ["http-cache-semantics", "npm:4.1.1"],\
+          ["make-fetch-happen", "npm:14.0.3"],\
           ["minipass", "npm:7.1.2"],\
           ["minipass-fetch", "npm:4.0.1"],\
           ["minipass-flush", "npm:1.0.5"],\
@@ -3668,8 +3691,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.0.8", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/micromatch-npm-4.0.8-c9570e4aca-10c0.zip/node_modules/micromatch/",\
         "packageDependencies": [\
-          ["micromatch", "npm:4.0.8"],\
           ["braces", "npm:3.0.3"],\
+          ["micromatch", "npm:4.0.8"],\
           ["picomatch", "npm:2.3.1"]\
         ],\
         "linkType": "HARD"\
@@ -3679,16 +3702,16 @@ const RAW_RUNTIME_STATE =
       ["npm:3.1.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minimatch-npm-3.1.2-9405269906-10c0.zip/node_modules/minimatch/",\
         "packageDependencies": [\
-          ["minimatch", "npm:3.1.2"],\
-          ["brace-expansion", "npm:1.1.11"]\
+          ["brace-expansion", "npm:1.1.11"],\
+          ["minimatch", "npm:3.1.2"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:9.0.5", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minimatch-npm-9.0.5-9aa93d97fa-10c0.zip/node_modules/minimatch/",\
         "packageDependencies": [\
-          ["minimatch", "npm:9.0.5"],\
-          ["brace-expansion", "npm:2.0.1"]\
+          ["brace-expansion", "npm:2.0.1"],\
+          ["minimatch", "npm:9.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3714,8 +3737,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minipass-collect-npm-2.0.1-73d3907e40-10c0.zip/node_modules/minipass-collect/",\
         "packageDependencies": [\
-          ["minipass-collect", "npm:2.0.1"],\
-          ["minipass", "npm:7.1.2"]\
+          ["minipass", "npm:7.1.2"],\
+          ["minipass-collect", "npm:2.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3724,9 +3747,9 @@ const RAW_RUNTIME_STATE =
       ["npm:4.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minipass-fetch-npm-4.0.1-ce1d15e957-10c0.zip/node_modules/minipass-fetch/",\
         "packageDependencies": [\
-          ["minipass-fetch", "npm:4.0.1"],\
           ["encoding", "npm:0.1.13"],\
           ["minipass", "npm:7.1.2"],\
+          ["minipass-fetch", "npm:4.0.1"],\
           ["minipass-sized", "npm:1.0.3"],\
           ["minizlib", "npm:3.0.1"]\
         ],\
@@ -3737,8 +3760,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.0.5", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minipass-flush-npm-1.0.5-efe79d9826-10c0.zip/node_modules/minipass-flush/",\
         "packageDependencies": [\
-          ["minipass-flush", "npm:1.0.5"],\
-          ["minipass", "npm:3.3.6"]\
+          ["minipass", "npm:3.3.6"],\
+          ["minipass-flush", "npm:1.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3747,8 +3770,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.2.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minipass-pipeline-npm-1.2.4-5924cb077f-10c0.zip/node_modules/minipass-pipeline/",\
         "packageDependencies": [\
-          ["minipass-pipeline", "npm:1.2.4"],\
-          ["minipass", "npm:3.3.6"]\
+          ["minipass", "npm:3.3.6"],\
+          ["minipass-pipeline", "npm:1.2.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3757,8 +3780,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.0.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minipass-sized-npm-1.0.3-306d86f432-10c0.zip/node_modules/minipass-sized/",\
         "packageDependencies": [\
-          ["minipass-sized", "npm:1.0.3"],\
-          ["minipass", "npm:3.3.6"]\
+          ["minipass", "npm:3.3.6"],\
+          ["minipass-sized", "npm:1.0.3"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3767,8 +3790,8 @@ const RAW_RUNTIME_STATE =
       ["npm:3.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/minizlib-npm-3.0.1-4bdabd978f-10c0.zip/node_modules/minizlib/",\
         "packageDependencies": [\
-          ["minizlib", "npm:3.0.1"],\
           ["minipass", "npm:7.1.2"],\
+          ["minizlib", "npm:3.0.1"],\
           ["rimraf", "npm:5.0.10"]\
         ],\
         "linkType": "HARD"\
@@ -3814,13 +3837,13 @@ const RAW_RUNTIME_STATE =
       ["npm:3.0.3", {\
         "packageLocation": "./.yarn/unplugged/msgpackr-extract-npm-3.0.3-3594f14366/node_modules/msgpackr-extract/",\
         "packageDependencies": [\
-          ["msgpackr-extract", "npm:3.0.3"],\
           ["@msgpackr-extract/msgpackr-extract-darwin-arm64", "npm:3.0.3"],\
           ["@msgpackr-extract/msgpackr-extract-darwin-x64", "npm:3.0.3"],\
           ["@msgpackr-extract/msgpackr-extract-linux-arm", "npm:3.0.3"],\
           ["@msgpackr-extract/msgpackr-extract-linux-arm64", "npm:3.0.3"],\
           ["@msgpackr-extract/msgpackr-extract-linux-x64", "npm:3.0.3"],\
           ["@msgpackr-extract/msgpackr-extract-win32-x64", "npm:3.0.3"],\
+          ["msgpackr-extract", "npm:3.0.3"],\
           ["node-gyp", "npm:11.1.0"],\
           ["node-gyp-build-optional-packages", "npm:5.2.2"]\
         ],\
@@ -3867,12 +3890,12 @@ const RAW_RUNTIME_STATE =
       ["npm:11.1.0", {\
         "packageLocation": "./.yarn/unplugged/node-gyp-npm-11.1.0-bd7044e197/node_modules/node-gyp/",\
         "packageDependencies": [\
-          ["node-gyp", "npm:11.1.0"],\
           ["env-paths", "npm:2.2.1"],\
           ["exponential-backoff", "npm:3.1.2"],\
           ["glob", "npm:10.4.5"],\
           ["graceful-fs", "npm:4.2.11"],\
           ["make-fetch-happen", "npm:14.0.3"],\
+          ["node-gyp", "npm:11.1.0"],\
           ["nopt", "npm:8.1.0"],\
           ["proc-log", "npm:5.0.0"],\
           ["semver", "npm:7.7.1"],\
@@ -3886,16 +3909,16 @@ const RAW_RUNTIME_STATE =
       ["npm:5.1.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/node-gyp-build-optional-packages-npm-5.1.1-ff11e179dd-10c0.zip/node_modules/node-gyp-build-optional-packages/",\
         "packageDependencies": [\
-          ["node-gyp-build-optional-packages", "npm:5.1.1"],\
-          ["detect-libc", "npm:2.0.3"]\
+          ["detect-libc", "npm:2.0.3"],\
+          ["node-gyp-build-optional-packages", "npm:5.1.1"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:5.2.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/node-gyp-build-optional-packages-npm-5.2.2-2994e6ac33-10c0.zip/node_modules/node-gyp-build-optional-packages/",\
         "packageDependencies": [\
-          ["node-gyp-build-optional-packages", "npm:5.2.2"],\
-          ["detect-libc", "npm:2.0.3"]\
+          ["detect-libc", "npm:2.0.3"],\
+          ["node-gyp-build-optional-packages", "npm:5.2.2"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3920,8 +3943,8 @@ const RAW_RUNTIME_STATE =
       ["npm:8.1.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/nopt-npm-8.1.0-5570ef63cd-10c0.zip/node_modules/nopt/",\
         "packageDependencies": [\
-          ["nopt", "npm:8.1.0"],\
-          ["abbrev", "npm:3.0.0"]\
+          ["abbrev", "npm:3.0.0"],\
+          ["nopt", "npm:8.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -3949,10 +3972,10 @@ const RAW_RUNTIME_STATE =
       ["npm:0.9.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/optionator-npm-0.9.4-1f114b00e8-10c0.zip/node_modules/optionator/",\
         "packageDependencies": [\
-          ["optionator", "npm:0.9.4"],\
           ["deep-is", "npm:0.1.4"],\
           ["fast-levenshtein", "npm:2.0.6"],\
           ["levn", "npm:0.4.1"],\
+          ["optionator", "npm:0.9.4"],\
           ["prelude-ls", "npm:1.2.1"],\
           ["type-check", "npm:0.4.0"],\
           ["word-wrap", "npm:1.2.5"]\
@@ -3983,8 +4006,8 @@ const RAW_RUNTIME_STATE =
       ["npm:5.0.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/p-locate-npm-5.0.0-92cc7c7a3e-10c0.zip/node_modules/p-locate/",\
         "packageDependencies": [\
-          ["p-locate", "npm:5.0.0"],\
-          ["p-limit", "npm:3.1.0"]\
+          ["p-limit", "npm:3.1.0"],\
+          ["p-locate", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4027,7 +4050,6 @@ const RAW_RUNTIME_STATE =
       ["virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.16.4", {\
         "packageLocation": "./.yarn/__virtual__/parcel-virtual-1d3c6736a0/7/runner/cache/others/berry/cache/parcel-npm-2.16.4-c30ba12488-10c0.zip/node_modules/parcel/",\
         "packageDependencies": [\
-          ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.16.4"],\
           ["@parcel/config-default", "virtual:1d3c6736a0298fc666ba945a58ee7f8c27eff7c610475ad3d70833c886181038e8e6c36cfa9bbfd50212e727450edc0156fdd4f3cae55d944a77e430706c7fc1#npm:2.16.4"],\
           ["@parcel/core", "npm:2.16.4"],\
           ["@parcel/diagnostic", "npm:2.16.4"],\
@@ -4043,7 +4065,8 @@ const RAW_RUNTIME_STATE =
           ["@types/parcel__core", null],\
           ["chalk", "npm:4.1.2"],\
           ["commander", "npm:12.1.0"],\
-          ["get-port", "npm:4.2.0"]\
+          ["get-port", "npm:4.2.0"],\
+          ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.16.4"]\
         ],\
         "packagePeers": [\
           "@types/parcel__core"\
@@ -4055,8 +4078,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/parent-module-npm-1.0.1-1fae11b095-10c0.zip/node_modules/parent-module/",\
         "packageDependencies": [\
-          ["parent-module", "npm:1.0.1"],\
-          ["callsites", "npm:3.1.0"]\
+          ["callsites", "npm:3.1.0"],\
+          ["parent-module", "npm:1.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4092,9 +4115,9 @@ const RAW_RUNTIME_STATE =
       ["npm:1.11.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/path-scurry-npm-1.11.1-aaf8c339af-10c0.zip/node_modules/path-scurry/",\
         "packageDependencies": [\
-          ["path-scurry", "npm:1.11.1"],\
           ["lru-cache", "npm:10.4.3"],\
-          ["minipass", "npm:7.1.2"]\
+          ["minipass", "npm:7.1.2"],\
+          ["path-scurry", "npm:1.11.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4166,8 +4189,8 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/promise-retry-npm-2.0.1-871f0b01b7-10c0.zip/node_modules/promise-retry/",\
         "packageDependencies": [\
-          ["promise-retry", "npm:2.0.1"],\
           ["err-code", "npm:2.0.3"],\
+          ["promise-retry", "npm:2.0.1"],\
           ["retry", "npm:0.12.0"]\
         ],\
         "linkType": "HARD"\
@@ -4240,16 +4263,16 @@ const RAW_RUNTIME_STATE =
       ["npm:3.0.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/rimraf-npm-3.0.2-2cb7dac69a-10c0.zip/node_modules/rimraf/",\
         "packageDependencies": [\
-          ["rimraf", "npm:3.0.2"],\
-          ["glob", "npm:7.2.3"]\
+          ["glob", "npm:7.2.3"],\
+          ["rimraf", "npm:3.0.2"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:5.0.10", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/rimraf-npm-5.0.10-d0c6647697-10c0.zip/node_modules/rimraf/",\
         "packageDependencies": [\
-          ["rimraf", "npm:5.0.10"],\
-          ["glob", "npm:10.4.5"]\
+          ["glob", "npm:10.4.5"],\
+          ["rimraf", "npm:5.0.10"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4258,8 +4281,8 @@ const RAW_RUNTIME_STATE =
       ["npm:1.2.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/run-parallel-npm-1.2.0-3f47ff2034-10c0.zip/node_modules/run-parallel/",\
         "packageDependencies": [\
-          ["run-parallel", "npm:1.2.0"],\
-          ["queue-microtask", "npm:1.2.3"]\
+          ["queue-microtask", "npm:1.2.3"],\
+          ["run-parallel", "npm:1.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4348,9 +4371,9 @@ const RAW_RUNTIME_STATE =
       ["npm:2.8.4", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/socks-npm-2.8.4-8194b86bd0-10c0.zip/node_modules/socks/",\
         "packageDependencies": [\
-          ["socks", "npm:2.8.4"],\
           ["ip-address", "npm:9.0.5"],\
-          ["smart-buffer", "npm:4.2.0"]\
+          ["smart-buffer", "npm:4.2.0"],\
+          ["socks", "npm:2.8.4"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4359,10 +4382,10 @@ const RAW_RUNTIME_STATE =
       ["npm:8.0.5", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/socks-proxy-agent-npm-8.0.5-24d77a90dc-10c0.zip/node_modules/socks-proxy-agent/",\
         "packageDependencies": [\
-          ["socks-proxy-agent", "npm:8.0.5"],\
           ["agent-base", "npm:7.1.3"],\
           ["debug", "virtual:1ff4b5f90832ba0a9c93ba1223af226e44ba70c1126a3740d93562b97bc36544e896a5e95908196f7458713e6a6089a34bfc67362fc6df7fa093bd06c878be47#npm:4.4.0"],\
-          ["socks", "npm:2.8.4"]\
+          ["socks", "npm:2.8.4"],\
+          ["socks-proxy-agent", "npm:8.0.5"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4380,8 +4403,8 @@ const RAW_RUNTIME_STATE =
       ["npm:12.0.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/ssri-npm-12.0.0-97c0e53d2e-10c0.zip/node_modules/ssri/",\
         "packageDependencies": [\
-          ["ssri", "npm:12.0.0"],\
-          ["minipass", "npm:7.1.2"]\
+          ["minipass", "npm:7.1.2"],\
+          ["ssri", "npm:12.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4390,9 +4413,9 @@ const RAW_RUNTIME_STATE =
       ["npm:4.2.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/string-width-npm-4.2.3-2c27177bae-10c0.zip/node_modules/string-width/",\
         "packageDependencies": [\
-          ["string-width", "npm:4.2.3"],\
           ["emoji-regex", "npm:8.0.0"],\
           ["is-fullwidth-code-point", "npm:3.0.0"],\
+          ["string-width", "npm:4.2.3"],\
           ["strip-ansi", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
@@ -4400,9 +4423,9 @@ const RAW_RUNTIME_STATE =
       ["npm:5.1.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/string-width-npm-5.1.2-bf60531341-10c0.zip/node_modules/string-width/",\
         "packageDependencies": [\
-          ["string-width", "npm:5.1.2"],\
           ["eastasianwidth", "npm:0.2.0"],\
           ["emoji-regex", "npm:9.2.2"],\
+          ["string-width", "npm:5.1.2"],\
           ["strip-ansi", "npm:7.1.0"]\
         ],\
         "linkType": "HARD"\
@@ -4412,16 +4435,16 @@ const RAW_RUNTIME_STATE =
       ["npm:6.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/strip-ansi-npm-6.0.1-caddc7cb40-10c0.zip/node_modules/strip-ansi/",\
         "packageDependencies": [\
-          ["strip-ansi", "npm:6.0.1"],\
-          ["ansi-regex", "npm:5.0.1"]\
+          ["ansi-regex", "npm:5.0.1"],\
+          ["strip-ansi", "npm:6.0.1"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:7.1.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/strip-ansi-npm-7.1.0-7453b80b79-10c0.zip/node_modules/strip-ansi/",\
         "packageDependencies": [\
-          ["strip-ansi", "npm:7.1.0"],\
-          ["ansi-regex", "npm:6.1.0"]\
+          ["ansi-regex", "npm:6.1.0"],\
+          ["strip-ansi", "npm:7.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4439,8 +4462,8 @@ const RAW_RUNTIME_STATE =
       ["npm:7.2.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/supports-color-npm-7.2.0-606bfcf7da-10c0.zip/node_modules/supports-color/",\
         "packageDependencies": [\
-          ["supports-color", "npm:7.2.0"],\
-          ["has-flag", "npm:4.0.0"]\
+          ["has-flag", "npm:4.0.0"],\
+          ["supports-color", "npm:7.2.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4449,12 +4472,12 @@ const RAW_RUNTIME_STATE =
       ["npm:7.4.3", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/tar-npm-7.4.3-1dbbd1ffc3-10c0.zip/node_modules/tar/",\
         "packageDependencies": [\
-          ["tar", "npm:7.4.3"],\
           ["@isaacs/fs-minipass", "npm:4.0.1"],\
           ["chownr", "npm:3.0.0"],\
           ["minipass", "npm:7.1.2"],\
           ["minizlib", "npm:3.0.1"],\
           ["mkdirp", "npm:3.0.1"],\
+          ["tar", "npm:7.4.3"],\
           ["yallist", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
@@ -4482,8 +4505,8 @@ const RAW_RUNTIME_STATE =
       ["npm:5.0.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/to-regex-range-npm-5.0.1-f1e8263b00-10c0.zip/node_modules/to-regex-range/",\
         "packageDependencies": [\
-          ["to-regex-range", "npm:5.0.1"],\
-          ["is-number", "npm:7.0.0"]\
+          ["is-number", "npm:7.0.0"],\
+          ["to-regex-range", "npm:5.0.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4499,8 +4522,8 @@ const RAW_RUNTIME_STATE =
       ["virtual:007eea883f4aeaa5628b41f89c000b62a4d9c04073c5c0641b54fe25132b9ffc6ed5d8e919bcb12b32374a4bc4547887de7cfb697ab27c0c996b8cde1cd5fd38#npm:1.4.3", {\
         "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-95befc8d72/7/runner/cache/others/berry/cache/ts-api-utils-npm-1.4.3-ee6b12ae73-10c0.zip/node_modules/ts-api-utils/",\
         "packageDependencies": [\
-          ["ts-api-utils", "virtual:007eea883f4aeaa5628b41f89c000b62a4d9c04073c5c0641b54fe25132b9ffc6ed5d8e919bcb12b32374a4bc4547887de7cfb697ab27c0c996b8cde1cd5fd38#npm:1.4.3"],\
           ["@types/typescript", null],\
+          ["ts-api-utils", "virtual:007eea883f4aeaa5628b41f89c000b62a4d9c04073c5c0641b54fe25132b9ffc6ed5d8e919bcb12b32374a4bc4547887de7cfb697ab27c0c996b8cde1cd5fd38#npm:1.4.3"],\
           ["typescript", null]\
         ],\
         "packagePeers": [\
@@ -4512,8 +4535,8 @@ const RAW_RUNTIME_STATE =
       ["virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:1.4.3", {\
         "packageLocation": "./.yarn/__virtual__/ts-api-utils-virtual-e89e9c1270/7/runner/cache/others/berry/cache/ts-api-utils-npm-1.4.3-ee6b12ae73-10c0.zip/node_modules/ts-api-utils/",\
         "packageDependencies": [\
-          ["ts-api-utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:1.4.3"],\
           ["@types/typescript", null],\
+          ["ts-api-utils", "virtual:cbac9598750b8b9374b8d0b69ec297a1852bc9bc4e08348966efc2850c96bde58c7f442b9758ebd9b4bec453d1466da11031672ba574391d941fff314abb68c8#npm:1.4.3"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
         ],\
         "packagePeers": [\
@@ -4536,8 +4559,8 @@ const RAW_RUNTIME_STATE =
       ["npm:0.4.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/type-check-npm-0.4.0-60565800ce-10c0.zip/node_modules/type-check/",\
         "packageDependencies": [\
-          ["type-check", "npm:0.4.0"],\
-          ["prelude-ls", "npm:1.2.1"]\
+          ["prelude-ls", "npm:1.2.1"],\
+          ["type-check", "npm:0.4.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4564,7 +4587,6 @@ const RAW_RUNTIME_STATE =
       ["workspace:.", {\
         "packageLocation": "./",\
         "packageDependencies": [\
-          ["typescript-p5-template", "workspace:."],\
           ["@types/eslint", "npm:8.56.12"],\
           ["@types/p5", "npm:1.7.7"],\
           ["@types/prettier", "npm:3.0.0"],\
@@ -4575,7 +4597,8 @@ const RAW_RUNTIME_STATE =
           ["p5", "npm:1.11.13"],\
           ["parcel", "virtual:b84361a6c3220e0ad26e2957894a0ed756c4fb970288c2916931eea6de9aa59426cd4618cd33df946a98ffdd5675a16cce6fe8a97fd33bd2f25866a675729e43#npm:2.16.4"],\
           ["prettier", "npm:3.5.3"],\
-          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"]\
+          ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=5786d5"],\
+          ["typescript-p5-template", "workspace:."]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -4594,8 +4617,8 @@ const RAW_RUNTIME_STATE =
       ["npm:5.0.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/unique-slug-npm-5.0.0-11508c0469-10c0.zip/node_modules/unique-slug/",\
         "packageDependencies": [\
-          ["unique-slug", "npm:5.0.0"],\
-          ["imurmurhash", "npm:0.1.4"]\
+          ["imurmurhash", "npm:0.1.4"],\
+          ["unique-slug", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4611,11 +4634,11 @@ const RAW_RUNTIME_STATE =
       ["virtual:2fdeb5face9914bb5fd94c70f084d153c80d2f09e5aabee010e4220b248dc23fca8f73c7beed0195e45ae6e2b1cb25388f709d7bfc4f00e473d573887faf4e5c#npm:1.1.3", {\
         "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-d61a3b9678/7/runner/cache/others/berry/cache/update-browserslist-db-npm-1.1.3-569a9be54b-10c0.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
-          ["update-browserslist-db", "virtual:2fdeb5face9914bb5fd94c70f084d153c80d2f09e5aabee010e4220b248dc23fca8f73c7beed0195e45ae6e2b1cb25388f709d7bfc4f00e473d573887faf4e5c#npm:1.1.3"],\
           ["@types/browserslist", null],\
           ["browserslist", "npm:4.24.4"],\
           ["escalade", "npm:3.2.0"],\
-          ["picocolors", "npm:1.1.1"]\
+          ["picocolors", "npm:1.1.1"],\
+          ["update-browserslist-db", "virtual:2fdeb5face9914bb5fd94c70f084d153c80d2f09e5aabee010e4220b248dc23fca8f73c7beed0195e45ae6e2b1cb25388f709d7bfc4f00e473d573887faf4e5c#npm:1.1.3"]\
         ],\
         "packagePeers": [\
           "@types/browserslist",\
@@ -4626,11 +4649,11 @@ const RAW_RUNTIME_STATE =
       ["virtual:713d4a89d17b986cd049d55a31a81dbec1caf092e3b6ed463f353fd4a3246417e821b15d7340b32b15a56077d915deb33f1731028a98a2619d7175c986a372d0#npm:1.1.3", {\
         "packageLocation": "./.yarn/__virtual__/update-browserslist-db-virtual-1799967bb6/7/runner/cache/others/berry/cache/update-browserslist-db-npm-1.1.3-569a9be54b-10c0.zip/node_modules/update-browserslist-db/",\
         "packageDependencies": [\
-          ["update-browserslist-db", "virtual:713d4a89d17b986cd049d55a31a81dbec1caf092e3b6ed463f353fd4a3246417e821b15d7340b32b15a56077d915deb33f1731028a98a2619d7175c986a372d0#npm:1.1.3"],\
           ["@types/browserslist", null],\
           ["browserslist", "npm:4.26.2"],\
           ["escalade", "npm:3.2.0"],\
-          ["picocolors", "npm:1.1.1"]\
+          ["picocolors", "npm:1.1.1"],\
+          ["update-browserslist-db", "virtual:713d4a89d17b986cd049d55a31a81dbec1caf092e3b6ed463f353fd4a3246417e821b15d7340b32b15a56077d915deb33f1731028a98a2619d7175c986a372d0#npm:1.1.3"]\
         ],\
         "packagePeers": [\
           "@types/browserslist",\
@@ -4643,8 +4666,8 @@ const RAW_RUNTIME_STATE =
       ["npm:4.4.1", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/uri-js-npm-4.4.1-66d11cbcaf-10c0.zip/node_modules/uri-js/",\
         "packageDependencies": [\
-          ["uri-js", "npm:4.4.1"],\
-          ["punycode", "npm:2.3.1"]\
+          ["punycode", "npm:2.3.1"],\
+          ["uri-js", "npm:4.4.1"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4671,16 +4694,16 @@ const RAW_RUNTIME_STATE =
       ["npm:2.0.2", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/which-npm-2.0.2-320ddf72f7-10c0.zip/node_modules/which/",\
         "packageDependencies": [\
-          ["which", "npm:2.0.2"],\
-          ["isexe", "npm:2.0.0"]\
+          ["isexe", "npm:2.0.0"],\
+          ["which", "npm:2.0.2"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:5.0.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/which-npm-5.0.0-15aa39eb60-10c0.zip/node_modules/which/",\
         "packageDependencies": [\
-          ["which", "npm:5.0.0"],\
-          ["isexe", "npm:3.1.1"]\
+          ["isexe", "npm:3.1.1"],\
+          ["which", "npm:5.0.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4698,20 +4721,20 @@ const RAW_RUNTIME_STATE =
       ["npm:7.0.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/wrap-ansi-npm-7.0.0-ad6e1a0554-10c0.zip/node_modules/wrap-ansi/",\
         "packageDependencies": [\
-          ["wrap-ansi", "npm:7.0.0"],\
           ["ansi-styles", "npm:4.3.0"],\
           ["string-width", "npm:4.2.3"],\
-          ["strip-ansi", "npm:6.0.1"]\
+          ["strip-ansi", "npm:6.0.1"],\
+          ["wrap-ansi", "npm:7.0.0"]\
         ],\
         "linkType": "HARD"\
       }],\
       ["npm:8.1.0", {\
         "packageLocation": "../../../../../../runner/cache/others/berry/cache/wrap-ansi-npm-8.1.0-26a4e6ae28-10c0.zip/node_modules/wrap-ansi/",\
         "packageDependencies": [\
-          ["wrap-ansi", "npm:8.1.0"],\
           ["ansi-styles", "npm:6.2.1"],\
           ["string-width", "npm:5.1.2"],\
-          ["strip-ansi", "npm:7.1.0"]\
+          ["strip-ansi", "npm:7.1.0"],\
+          ["wrap-ansi", "npm:8.1.0"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4958,16 +4981,16 @@ function convertToBigIntStats(stats) {
     if (Object.hasOwn(stats, key)) {
       const element = stats[key];
       if (typeof element === `number`) {
-        bigintStats[key] = BigInt(element);
+        bigintStats[key] = BigInt(Math.floor(element));
       } else if (nodeUtils__namespace.types.isDate(element)) {
         bigintStats[key] = new Date(element);
       }
     }
   }
-  bigintStats.atimeNs = bigintStats.atimeMs * BigInt(1e6);
-  bigintStats.mtimeNs = bigintStats.mtimeMs * BigInt(1e6);
-  bigintStats.ctimeNs = bigintStats.ctimeMs * BigInt(1e6);
-  bigintStats.birthtimeNs = bigintStats.birthtimeMs * BigInt(1e6);
+  bigintStats.atimeNs = bigintStats.atimeMs * BigInt(1e6) + BigInt(Math.floor(stats.atimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.mtimeNs = bigintStats.mtimeMs * BigInt(1e6) + BigInt(Math.floor(stats.mtimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.ctimeNs = bigintStats.ctimeMs * BigInt(1e6) + BigInt(Math.floor(stats.ctimeMs % 1 * 1e3)) * BigInt(1e3);
+  bigintStats.birthtimeNs = bigintStats.birthtimeMs * BigInt(1e6) + BigInt(Math.floor(stats.birthtimeMs % 1 * 1e3)) * BigInt(1e3);
   return bigintStats;
 }
 function areStatsEqual(a, b) {
@@ -6160,7 +6183,7 @@ class ProxiedFS extends FakeFS {
   watch(p, a, b) {
     return this.baseFs.watch(
       this.mapToBase(p),
-      // @ts-expect-error
+      // @ts-expect-error - reason TBS
       a,
       b
     );
@@ -6168,7 +6191,7 @@ class ProxiedFS extends FakeFS {
   watchFile(p, a, b) {
     return this.baseFs.watchFile(
       this.mapToBase(p),
-      // @ts-expect-error
+      // @ts-expect-error - reason TBS
       a,
       b
     );
@@ -6588,7 +6611,7 @@ class NodeFS extends BasePortableFakeFS {
   watch(p, a, b) {
     return this.realFs.watch(
       npath.fromPortablePath(p),
-      // @ts-expect-error
+      // @ts-expect-error - reason TBS
       a,
       b
     );
@@ -6596,7 +6619,7 @@ class NodeFS extends BasePortableFakeFS {
   watchFile(p, a, b) {
     return this.realFs.watchFile(
       npath.fromPortablePath(p),
-      // @ts-expect-error
+      // @ts-expect-error - reason TBS
       a,
       b
     );
@@ -7291,14 +7314,14 @@ class MountFS extends BasePortableFakeFS {
     return this.makeCallSync(p, () => {
       return this.baseFs.watch(
         p,
-        // @ts-expect-error
+        // @ts-expect-error - reason TBS
         a,
         b
       );
     }, (mountFs, { subPath }) => {
       return mountFs.watch(
         subPath,
-        // @ts-expect-error
+        // @ts-expect-error - reason TBS
         a,
         b
       );
@@ -7308,7 +7331,7 @@ class MountFS extends BasePortableFakeFS {
     return this.makeCallSync(p, () => {
       return this.baseFs.watchFile(
         p,
-        // @ts-expect-error
+        // @ts-expect-error - reason TBS
         a,
         b
       );
@@ -7645,28 +7668,40 @@ class FileHandle {
   sync() {
     throw new Error(`Method not implemented.`);
   }
-  async read(bufferOrOptions, offset, length, position) {
+  async read(bufferOrOptions, offsetOrOptions, length, position) {
     try {
       this[kRef](this.read);
       let buffer;
-      if (!Buffer.isBuffer(bufferOrOptions)) {
-        bufferOrOptions ??= {};
-        buffer = bufferOrOptions.buffer ?? Buffer.alloc(16384);
-        offset = bufferOrOptions.offset || 0;
-        length = bufferOrOptions.length ?? buffer.byteLength;
-        position = bufferOrOptions.position ?? null;
+      let offset;
+      if (!ArrayBuffer.isView(bufferOrOptions)) {
+        buffer = bufferOrOptions?.buffer ?? Buffer.alloc(16384);
+        offset = bufferOrOptions?.offset ?? 0;
+        length = bufferOrOptions?.length ?? buffer.byteLength - offset;
+        position = bufferOrOptions?.position ?? null;
+      } else if (typeof offsetOrOptions === `object` && offsetOrOptions !== null) {
+        buffer = bufferOrOptions;
+        offset = offsetOrOptions?.offset ?? 0;
+        length = offsetOrOptions?.length ?? buffer.byteLength - offset;
+        position = offsetOrOptions?.position ?? null;
       } else {
         buffer = bufferOrOptions;
+        offset = offsetOrOptions ?? 0;
+        length ??= 0;
       }
-      offset ??= 0;
-      length ??= 0;
       if (length === 0) {
         return {
           bytesRead: length,
           buffer
         };
       }
-      const bytesRead = await this[kBaseFs].readPromise(this.fd, buffer, offset, length, position);
+      const bytesRead = await this[kBaseFs].readPromise(
+        this.fd,
+        // FIXME: FakeFS should support ArrayBufferViews directly
+        Buffer.isBuffer(buffer) ? buffer : Buffer.from(buffer.buffer, buffer.byteOffset, buffer.byteLength),
+        offset,
+        length,
+        position
+      );
       return {
         bytesRead,
         buffer
@@ -8900,14 +8935,16 @@ class ZipOpenFS extends MountFS {
       return new ZipFS(p, {
         baseFs,
         readOnly: readOnlyArchives,
-        stats: baseFs.statSync(p)
+        stats: baseFs.statSync(p),
+        customZipImplementation: opts.customZipImplementation
       });
     };
     const factoryPromise = async (baseFs, p) => {
       const zipOptions = {
         baseFs,
         readOnly: readOnlyArchives,
-        stats: await baseFs.statPromise(p)
+        stats: await baseFs.statPromise(p),
+        customZipImplementation: opts.customZipImplementation
       };
       return () => {
         return new ZipFS(p, zipOptions);
@@ -8922,6 +8959,236 @@ class ZipOpenFS extends MountFS {
   }
 }
 
+class LibzipError extends Error {
+  code;
+  constructor(message, code) {
+    super(message);
+    this.name = `Libzip Error`;
+    this.code = code;
+  }
+}
+class LibZipImpl {
+  libzip;
+  lzSource;
+  zip;
+  listings;
+  symlinkCount;
+  filesShouldBeCached = true;
+  constructor(opts) {
+    const buffer = `buffer` in opts ? opts.buffer : opts.baseFs.readFileSync(opts.path);
+    this.libzip = getInstance();
+    const errPtr = this.libzip.malloc(4);
+    try {
+      let flags = 0;
+      if (opts.readOnly)
+        flags |= this.libzip.ZIP_RDONLY;
+      const lzSource = this.allocateUnattachedSource(buffer);
+      try {
+        this.zip = this.libzip.openFromSource(lzSource, flags, errPtr);
+        this.lzSource = lzSource;
+      } catch (error) {
+        this.libzip.source.free(lzSource);
+        throw error;
+      }
+      if (this.zip === 0) {
+        const error = this.libzip.struct.errorS();
+        this.libzip.error.initWithCode(error, this.libzip.getValue(errPtr, `i32`));
+        throw this.makeLibzipError(error);
+      }
+    } finally {
+      this.libzip.free(errPtr);
+    }
+    const entryCount = this.libzip.getNumEntries(this.zip, 0);
+    const listings = new Array(entryCount);
+    for (let t = 0; t < entryCount; ++t)
+      listings[t] = this.libzip.getName(this.zip, t, 0);
+    this.listings = listings;
+    this.symlinkCount = this.libzip.ext.countSymlinks(this.zip);
+    if (this.symlinkCount === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  getSymlinkCount() {
+    return this.symlinkCount;
+  }
+  getListings() {
+    return this.listings;
+  }
+  stat(entry) {
+    const stat = this.libzip.struct.statS();
+    const rc = this.libzip.statIndex(this.zip, entry, 0, 0, stat);
+    if (rc === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const size = this.libzip.struct.statSize(stat) >>> 0;
+    const mtime = this.libzip.struct.statMtime(stat) >>> 0;
+    const crc = this.libzip.struct.statCrc(stat) >>> 0;
+    return { size, mtime, crc };
+  }
+  makeLibzipError(error) {
+    const errorCode = this.libzip.struct.errorCodeZip(error);
+    const strerror = this.libzip.error.strerror(error);
+    const libzipError = new LibzipError(strerror, this.libzip.errors[errorCode]);
+    if (errorCode === this.libzip.errors.ZIP_ER_CHANGED)
+      throw new Error(`Assertion failed: Unexpected libzip error: ${libzipError.message}`);
+    return libzipError;
+  }
+  setFileSource(target, compression, buffer) {
+    const lzSource = this.allocateSource(buffer);
+    try {
+      const newIndex = this.libzip.file.add(this.zip, target, lzSource, this.libzip.ZIP_FL_OVERWRITE);
+      if (newIndex === -1)
+        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      if (compression !== null) {
+        const rc = this.libzip.file.setCompression(this.zip, newIndex, 0, compression[0], compression[1]);
+        if (rc === -1) {
+          throw this.makeLibzipError(this.libzip.getError(this.zip));
+        }
+      }
+      return newIndex;
+    } catch (error) {
+      this.libzip.source.free(lzSource);
+      throw error;
+    }
+  }
+  setMtime(entry, mtime) {
+    const rc = this.libzip.file.setMtime(this.zip, entry, 0, mtime, 0);
+    if (rc === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  getExternalAttributes(index) {
+    const attrs = this.libzip.file.getExternalAttributes(this.zip, index, 0, 0, this.libzip.uint08S, this.libzip.uint32S);
+    if (attrs === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const opsys = this.libzip.getValue(this.libzip.uint08S, `i8`) >>> 0;
+    const attributes = this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 0;
+    return [opsys, attributes];
+  }
+  setExternalAttributes(index, opsys, attributes) {
+    const rc = this.libzip.file.setExternalAttributes(this.zip, index, 0, 0, opsys, attributes);
+    if (rc === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  locate(name) {
+    return this.libzip.name.locate(this.zip, name, 0);
+  }
+  getFileSource(index) {
+    const stat = this.libzip.struct.statS();
+    const rc = this.libzip.statIndex(this.zip, index, 0, 0, stat);
+    if (rc === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const size = this.libzip.struct.statCompSize(stat);
+    const compressionMethod = this.libzip.struct.statCompMethod(stat);
+    const buffer = this.libzip.malloc(size);
+    try {
+      const file = this.libzip.fopenIndex(this.zip, index, 0, this.libzip.ZIP_FL_COMPRESSED);
+      if (file === 0)
+        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      try {
+        const rc2 = this.libzip.fread(file, buffer, size, 0);
+        if (rc2 === -1)
+          throw this.makeLibzipError(this.libzip.file.getError(file));
+        else if (rc2 < size)
+          throw new Error(`Incomplete read`);
+        else if (rc2 > size)
+          throw new Error(`Overread`);
+        const memory = this.libzip.HEAPU8.subarray(buffer, buffer + size);
+        const data = Buffer.from(memory);
+        return { data, compressionMethod };
+      } finally {
+        this.libzip.fclose(file);
+      }
+    } finally {
+      this.libzip.free(buffer);
+    }
+  }
+  deleteEntry(index) {
+    const rc = this.libzip.delete(this.zip, index);
+    if (rc === -1) {
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+  }
+  addDirectory(path) {
+    const index = this.libzip.dir.add(this.zip, path);
+    if (index === -1)
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    return index;
+  }
+  getBufferAndClose() {
+    try {
+      this.libzip.source.keep(this.lzSource);
+      if (this.libzip.close(this.zip) === -1)
+        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      if (this.libzip.source.open(this.lzSource) === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_END) === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      const size = this.libzip.source.tell(this.lzSource);
+      if (size === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_SET) === -1)
+        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+      const buffer = this.libzip.malloc(size);
+      if (!buffer)
+        throw new Error(`Couldn't allocate enough memory`);
+      try {
+        const rc = this.libzip.source.read(this.lzSource, buffer, size);
+        if (rc === -1)
+          throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
+        else if (rc < size)
+          throw new Error(`Incomplete read`);
+        else if (rc > size)
+          throw new Error(`Overread`);
+        let result = Buffer.from(this.libzip.HEAPU8.subarray(buffer, buffer + size));
+        if (process.env.YARN_IS_TEST_ENV && process.env.YARN_ZIP_DATA_EPILOGUE)
+          result = Buffer.concat([result, Buffer.from(process.env.YARN_ZIP_DATA_EPILOGUE)]);
+        return result;
+      } finally {
+        this.libzip.free(buffer);
+      }
+    } finally {
+      this.libzip.source.close(this.lzSource);
+      this.libzip.source.free(this.lzSource);
+    }
+  }
+  allocateBuffer(content) {
+    if (!Buffer.isBuffer(content))
+      content = Buffer.from(content);
+    const buffer = this.libzip.malloc(content.byteLength);
+    if (!buffer)
+      throw new Error(`Couldn't allocate enough memory`);
+    const heap = new Uint8Array(this.libzip.HEAPU8.buffer, buffer, content.byteLength);
+    heap.set(content);
+    return { buffer, byteLength: content.byteLength };
+  }
+  allocateUnattachedSource(content) {
+    const error = this.libzip.struct.errorS();
+    const { buffer, byteLength } = this.allocateBuffer(content);
+    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
+    if (source === 0) {
+      this.libzip.free(error);
+      throw this.makeLibzipError(error);
+    }
+    return source;
+  }
+  allocateSource(content) {
+    const { buffer, byteLength } = this.allocateBuffer(content);
+    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
+    if (source === 0) {
+      this.libzip.free(buffer);
+      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    }
+    return source;
+  }
+  discard() {
+    this.libzip.discard(this.zip);
+  }
+}
+
+const ZIP_UNIX = 3;
+const STORE = 0;
+const DEFLATE = 8;
 const DEFAULT_COMPRESSION_LEVEL = `mixed`;
 function toUnixTimestamp(time) {
   if (typeof time === `string` && String(+time) === time)
@@ -8963,22 +9230,12 @@ function makeEmptyArchive() {
     0
   ]);
 }
-class LibzipError extends Error {
-  code;
-  constructor(message, code) {
-    super(message);
-    this.name = `Libzip Error`;
-    this.code = code;
-  }
-}
 class ZipFS extends BasePortableFakeFS {
-  libzip;
   baseFs;
   path;
   stats;
-  zip;
-  lzSource;
   level;
+  zipImpl;
   listings = /* @__PURE__ */ new Map();
   entries = /* @__PURE__ */ new Map();
   /**
@@ -8994,9 +9251,11 @@ class ZipFS extends BasePortableFakeFS {
   readOnly = false;
   constructor(source, opts = {}) {
     super();
+    if (opts.readOnly)
+      this.readOnly = true;
     const pathOptions = opts;
     this.level = typeof pathOptions.level !== `undefined` ? pathOptions.level : DEFAULT_COMPRESSION_LEVEL;
-    source ??= makeEmptyArchive();
+    const ZipImplCls = opts.customZipImplementation ?? LibZipImpl;
     if (typeof source === `string`) {
       const { baseFs = new NodeFS() } = pathOptions;
       this.baseFs = baseFs;
@@ -9022,36 +9281,19 @@ class ZipFS extends BasePortableFakeFS {
         this.stats = makeDefaultStats();
       }
     }
-    this.libzip = getInstance();
-    const errPtr = this.libzip.malloc(4);
-    try {
-      let flags = 0;
-      if (opts.readOnly) {
-        flags |= this.libzip.ZIP_RDONLY;
-        this.readOnly = true;
+    if (typeof source === `string`) {
+      if (opts.create) {
+        this.zipImpl = new ZipImplCls({ buffer: makeEmptyArchive(), readOnly: this.readOnly });
+      } else {
+        this.zipImpl = new ZipImplCls({ path: source, baseFs: this.baseFs, readOnly: this.readOnly, size: this.stats.size });
       }
-      if (typeof source === `string`)
-        source = pathOptions.create ? makeEmptyArchive() : this.baseFs.readFileSync(source);
-      const lzSource = this.allocateUnattachedSource(source);
-      try {
-        this.zip = this.libzip.openFromSource(lzSource, flags, errPtr);
-        this.lzSource = lzSource;
-      } catch (error) {
-        this.libzip.source.free(lzSource);
-        throw error;
-      }
-      if (this.zip === 0) {
-        const error = this.libzip.struct.errorS();
-        this.libzip.error.initWithCode(error, this.libzip.getValue(errPtr, `i32`));
-        throw this.makeLibzipError(error);
-      }
-    } finally {
-      this.libzip.free(errPtr);
+    } else {
+      this.zipImpl = new ZipImplCls({ buffer: source ?? makeEmptyArchive(), readOnly: this.readOnly });
     }
     this.listings.set(PortablePath.root, /* @__PURE__ */ new Set());
-    const entryCount = this.libzip.getNumEntries(this.zip, 0);
-    for (let t = 0; t < entryCount; ++t) {
-      const raw = this.libzip.getName(this.zip, t, 0);
+    const listings = this.zipImpl.getListings();
+    for (let t = 0; t < listings.length; t++) {
+      const raw = listings[t];
       if (ppath.isAbsolute(raw))
         continue;
       const p = ppath.resolve(PortablePath.root, raw);
@@ -9060,18 +9302,8 @@ class ZipFS extends BasePortableFakeFS {
         this.registerListing(p);
       }
     }
-    this.symlinkCount = this.libzip.ext.countSymlinks(this.zip);
-    if (this.symlinkCount === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    this.symlinkCount = this.zipImpl.getSymlinkCount();
     this.ready = true;
-  }
-  makeLibzipError(error) {
-    const errorCode = this.libzip.struct.errorCodeZip(error);
-    const strerror = this.libzip.error.strerror(error);
-    const libzipError = new LibzipError(strerror, this.libzip.errors[errorCode]);
-    if (errorCode === this.libzip.errors.ZIP_ER_CHANGED)
-      throw new Error(`Assertion failed: Unexpected libzip error: ${libzipError.message}`);
-    return libzipError;
   }
   getExtractHint(hints) {
     for (const fileName of this.entries.keys()) {
@@ -9102,45 +9334,14 @@ class ZipFS extends BasePortableFakeFS {
       return makeEmptyArchive();
     }
     try {
-      this.libzip.source.keep(this.lzSource);
-      if (this.libzip.close(this.zip) === -1)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
-      if (this.libzip.source.open(this.lzSource) === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_END) === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      const size = this.libzip.source.tell(this.lzSource);
-      if (size === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      if (this.libzip.source.seek(this.lzSource, 0, 0, this.libzip.SEEK_SET) === -1)
-        throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-      const buffer = this.libzip.malloc(size);
-      if (!buffer)
-        throw new Error(`Couldn't allocate enough memory`);
-      try {
-        const rc = this.libzip.source.read(this.lzSource, buffer, size);
-        if (rc === -1)
-          throw this.makeLibzipError(this.libzip.source.error(this.lzSource));
-        else if (rc < size)
-          throw new Error(`Incomplete read`);
-        else if (rc > size)
-          throw new Error(`Overread`);
-        let result = Buffer.from(this.libzip.HEAPU8.subarray(buffer, buffer + size));
-        if (process.env.YARN_IS_TEST_ENV && process.env.YARN_ZIP_DATA_EPILOGUE)
-          result = Buffer.concat([result, Buffer.from(process.env.YARN_ZIP_DATA_EPILOGUE)]);
-        return result;
-      } finally {
-        this.libzip.free(buffer);
-      }
+      return this.zipImpl.getBufferAndClose();
     } finally {
-      this.libzip.source.close(this.lzSource);
-      this.libzip.source.free(this.lzSource);
       this.ready = false;
     }
   }
   discardAndClose() {
     this.prepareClose();
-    this.libzip.discard(this.zip);
+    this.zipImpl.discard();
     this.ready = false;
   }
   saveAndClose() {
@@ -9394,16 +9595,14 @@ class ZipFS extends BasePortableFakeFS {
   statImpl(reason, p, opts = {}) {
     const entry = this.entries.get(p);
     if (typeof entry !== `undefined`) {
-      const stat = this.libzip.struct.statS();
-      const rc = this.libzip.statIndex(this.zip, entry, 0, 0, stat);
-      if (rc === -1)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
+      const stat = this.zipImpl.stat(entry);
+      const crc = stat.crc;
+      const size = stat.size;
+      const mtimeMs = stat.mtime * 1e3;
       const uid = this.stats.uid;
       const gid = this.stats.gid;
-      const size = this.libzip.struct.statSize(stat) >>> 0;
       const blksize = 512;
-      const blocks = Math.ceil(size / blksize);
-      const mtimeMs = (this.libzip.struct.statMtime(stat) >>> 0) * 1e3;
+      const blocks = Math.ceil(stat.size / blksize);
       const atimeMs = mtimeMs;
       const birthtimeMs = mtimeMs;
       const ctimeMs = mtimeMs;
@@ -9414,7 +9613,6 @@ class ZipFS extends BasePortableFakeFS {
       const type = this.listings.has(p) ? fs.constants.S_IFDIR : this.isSymbolicLink(entry) ? fs.constants.S_IFLNK : fs.constants.S_IFREG;
       const defaultMode = type === fs.constants.S_IFDIR ? 493 : 420;
       const mode = type | this.getUnixMode(entry, defaultMode) & 511;
-      const crc = this.libzip.struct.statCrc(stat);
       const statInstance = Object.assign(new StatEntry(), { uid, gid, size, blksize, blocks, atime, birthtime, ctime, mtime, atimeMs, birthtimeMs, ctimeMs, mtimeMs, mode, crc });
       return opts.bigint === true ? convertToBigIntStats(statInstance) : statInstance;
     }
@@ -9440,13 +9638,10 @@ class ZipFS extends BasePortableFakeFS {
     throw new Error(`Unreachable`);
   }
   getUnixMode(index, defaultMode) {
-    const rc = this.libzip.file.getExternalAttributes(this.zip, index, 0, 0, this.libzip.uint08S, this.libzip.uint32S);
-    if (rc === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    const opsys = this.libzip.getValue(this.libzip.uint08S, `i8`) >>> 0;
-    if (opsys !== this.libzip.ZIP_OPSYS_UNIX)
+    const [opsys, attributes] = this.zipImpl.getExternalAttributes(index);
+    if (opsys !== ZIP_UNIX)
       return defaultMode;
-    return this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 16;
+    return attributes >>> 16;
   }
   registerListing(p) {
     const existingListing = this.listings.get(p);
@@ -9481,10 +9676,7 @@ class ZipFS extends BasePortableFakeFS {
   }
   deleteEntry(p, index) {
     this.unregisterEntry(p);
-    const rc = this.libzip.delete(this.zip, index);
-    if (rc === -1) {
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
+    this.zipImpl.deleteEntry(index);
   }
   resolveFilename(reason, p, resolveLastComponent = true, throwIfNoEntry = true) {
     if (!this.ready)
@@ -9517,7 +9709,7 @@ class ZipFS extends BasePortableFakeFS {
       resolvedP = ppath.resolve(parentP, ppath.basename(resolvedP));
       if (!resolveLastComponent || this.symlinkCount === 0)
         break;
-      const index = this.libzip.name.locate(this.zip, resolvedP.slice(1), 0);
+      const index = this.zipImpl.locate(resolvedP.slice(1));
       if (index === -1)
         break;
       if (this.isSymbolicLink(index)) {
@@ -9529,118 +9721,57 @@ class ZipFS extends BasePortableFakeFS {
     }
     return resolvedP;
   }
-  allocateBuffer(content) {
-    if (!Buffer.isBuffer(content))
-      content = Buffer.from(content);
-    const buffer = this.libzip.malloc(content.byteLength);
-    if (!buffer)
-      throw new Error(`Couldn't allocate enough memory`);
-    const heap = new Uint8Array(this.libzip.HEAPU8.buffer, buffer, content.byteLength);
-    heap.set(content);
-    return { buffer, byteLength: content.byteLength };
-  }
-  allocateUnattachedSource(content) {
-    const error = this.libzip.struct.errorS();
-    const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromUnattachedBuffer(buffer, byteLength, 0, 1, error);
-    if (source === 0) {
-      this.libzip.free(error);
-      throw this.makeLibzipError(error);
-    }
-    return source;
-  }
-  allocateSource(content) {
-    const { buffer, byteLength } = this.allocateBuffer(content);
-    const source = this.libzip.source.fromBuffer(this.zip, buffer, byteLength, 0, 1);
-    if (source === 0) {
-      this.libzip.free(buffer);
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
-    return source;
-  }
   setFileSource(p, content) {
     const buffer = Buffer.isBuffer(content) ? content : Buffer.from(content);
     const target = ppath.relative(PortablePath.root, p);
-    const lzSource = this.allocateSource(content);
-    try {
-      const newIndex = this.libzip.file.add(this.zip, target, lzSource, this.libzip.ZIP_FL_OVERWRITE);
-      if (newIndex === -1)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
-      if (this.level !== `mixed`) {
-        const method = this.level === 0 ? this.libzip.ZIP_CM_STORE : this.libzip.ZIP_CM_DEFLATE;
-        const rc = this.libzip.file.setCompression(this.zip, newIndex, 0, method, this.level);
-        if (rc === -1) {
-          throw this.makeLibzipError(this.libzip.getError(this.zip));
-        }
-      }
-      this.fileSources.set(newIndex, buffer);
-      return newIndex;
-    } catch (error) {
-      this.libzip.source.free(lzSource);
-      throw error;
+    let compression = null;
+    if (this.level !== `mixed`) {
+      const method = this.level === 0 ? STORE : DEFLATE;
+      compression = [method, this.level];
     }
+    const newIndex = this.zipImpl.setFileSource(target, compression, buffer);
+    this.fileSources.set(newIndex, buffer);
+    return newIndex;
   }
   isSymbolicLink(index) {
     if (this.symlinkCount === 0)
       return false;
-    const attrs = this.libzip.file.getExternalAttributes(this.zip, index, 0, 0, this.libzip.uint08S, this.libzip.uint32S);
-    if (attrs === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    const opsys = this.libzip.getValue(this.libzip.uint08S, `i8`) >>> 0;
-    if (opsys !== this.libzip.ZIP_OPSYS_UNIX)
+    const [opsys, attrs] = this.zipImpl.getExternalAttributes(index);
+    if (opsys !== ZIP_UNIX)
       return false;
-    const attributes = this.libzip.getValue(this.libzip.uint32S, `i32`) >>> 16;
+    const attributes = attrs >>> 16;
     return (attributes & fs.constants.S_IFMT) === fs.constants.S_IFLNK;
   }
   getFileSource(index, opts = { asyncDecompress: false }) {
     const cachedFileSource = this.fileSources.get(index);
     if (typeof cachedFileSource !== `undefined`)
       return cachedFileSource;
-    const stat = this.libzip.struct.statS();
-    const rc = this.libzip.statIndex(this.zip, index, 0, 0, stat);
-    if (rc === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    const size = this.libzip.struct.statCompSize(stat);
-    const compressionMethod = this.libzip.struct.statCompMethod(stat);
-    const buffer = this.libzip.malloc(size);
-    try {
-      const file = this.libzip.fopenIndex(this.zip, index, 0, this.libzip.ZIP_FL_COMPRESSED);
-      if (file === 0)
-        throw this.makeLibzipError(this.libzip.getError(this.zip));
-      try {
-        const rc2 = this.libzip.fread(file, buffer, size, 0);
-        if (rc2 === -1)
-          throw this.makeLibzipError(this.libzip.file.getError(file));
-        else if (rc2 < size)
-          throw new Error(`Incomplete read`);
-        else if (rc2 > size)
-          throw new Error(`Overread`);
-        const memory = this.libzip.HEAPU8.subarray(buffer, buffer + size);
-        const data = Buffer.from(memory);
-        if (compressionMethod === 0) {
-          this.fileSources.set(index, data);
-          return data;
-        } else if (opts.asyncDecompress) {
-          return new Promise((resolve, reject) => {
-            zlib__default.default.inflateRaw(data, (error, result) => {
-              if (error) {
-                reject(error);
-              } else {
+    const { data, compressionMethod } = this.zipImpl.getFileSource(index);
+    if (compressionMethod === STORE) {
+      if (this.zipImpl.filesShouldBeCached)
+        this.fileSources.set(index, data);
+      return data;
+    } else if (compressionMethod === DEFLATE) {
+      if (opts.asyncDecompress) {
+        return new Promise((resolve, reject) => {
+          zlib__default.default.inflateRaw(data, (error, result) => {
+            if (error) {
+              reject(error);
+            } else {
+              if (this.zipImpl.filesShouldBeCached)
                 this.fileSources.set(index, result);
-                resolve(result);
-              }
-            });
+              resolve(result);
+            }
           });
-        } else {
-          const decompressedData = zlib__default.default.inflateRawSync(data);
+        });
+      } else {
+        const decompressedData = zlib__default.default.inflateRawSync(data);
+        if (this.zipImpl.filesShouldBeCached)
           this.fileSources.set(index, decompressedData);
-          return decompressedData;
-        }
-      } finally {
-        this.libzip.fclose(file);
+        return decompressedData;
       }
-    } finally {
-      this.libzip.free(buffer);
+    } else {
+      throw new Error(`Unsupported compression method: ${compressionMethod}`);
     }
   }
   async fchmodPromise(fd, mask) {
@@ -9662,10 +9793,7 @@ class ZipFS extends BasePortableFakeFS {
       throw new Error(`Assertion failed: The entry should have been registered (${resolvedP})`);
     const oldMod = this.getUnixMode(entry, fs.constants.S_IFREG | 0);
     const newMod = oldMod & ~511 | mask;
-    const rc = this.libzip.file.setExternalAttributes(this.zip, entry, 0, 0, this.libzip.ZIP_OPSYS_UNIX, newMod << 16);
-    if (rc === -1) {
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
+    this.zipImpl.setExternalAttributes(entry, ZIP_UNIX, newMod << 16);
   }
   async fchownPromise(fd, uid, gid) {
     return this.chownPromise(this.fdToPath(fd, `fchown`), uid, gid);
@@ -9839,10 +9967,7 @@ class ZipFS extends BasePortableFakeFS {
     const entry = this.entries.get(resolvedP);
     if (entry === void 0)
       throw new Error(`Unreachable`);
-    const rc = this.libzip.file.setMtime(this.zip, entry, 0, toUnixTimestamp(mtime), 0);
-    if (rc === -1) {
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
-    }
+    this.zipImpl.setMtime(entry, toUnixTimestamp(mtime));
   }
   async mkdirPromise(p, opts) {
     return this.mkdirSync(p, opts);
@@ -9902,9 +10027,7 @@ class ZipFS extends BasePortableFakeFS {
     this.deleteEntry(p, index);
   }
   hydrateDirectory(resolvedP) {
-    const index = this.libzip.dir.add(this.zip, ppath.relative(PortablePath.root, resolvedP));
-    if (index === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    const index = this.zipImpl.addDirectory(ppath.relative(PortablePath.root, resolvedP));
     this.registerListing(resolvedP);
     this.registerEntry(resolvedP, index);
     return index;
@@ -9928,9 +10051,7 @@ class ZipFS extends BasePortableFakeFS {
       throw EEXIST(`symlink '${target}' -> '${p}'`);
     const index = this.setFileSource(resolvedP, target);
     this.registerEntry(resolvedP, index);
-    const rc = this.libzip.file.setExternalAttributes(this.zip, index, 0, 0, this.libzip.ZIP_OPSYS_UNIX, (fs.constants.S_IFLNK | 511) << 16);
-    if (rc === -1)
-      throw this.makeLibzipError(this.libzip.getError(this.zip));
+    this.zipImpl.setExternalAttributes(index, ZIP_UNIX, (fs.constants.S_IFLNK | 511) << 16);
     this.symlinkCount += 1;
   }
   async readFilePromise(p, encoding) {
@@ -9975,7 +10096,8 @@ class ZipFS extends BasePortableFakeFS {
         const entries = Array.from(directoryListing, (name) => {
           return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
             name,
-            path: PortablePath.dot
+            path: PortablePath.dot,
+            parentPath: PortablePath.dot
           });
         });
         for (const entry of entries) {
@@ -9986,7 +10108,8 @@ class ZipFS extends BasePortableFakeFS {
           for (const child of subListing) {
             entries.push(Object.assign(this.statImpl(`lstat`, ppath.join(p, subPath, child)), {
               name: child,
-              path: subPath
+              path: subPath,
+              parentPath: subPath
             }));
           }
         }
@@ -10007,7 +10130,8 @@ class ZipFS extends BasePortableFakeFS {
       return Array.from(directoryListing, (name) => {
         return Object.assign(this.statImpl(`lstat`, ppath.join(p, name)), {
           name,
-          path: void 0
+          path: void 0,
+          parentPath: void 0
         });
       });
     } else {
@@ -10085,10 +10209,13 @@ class ZipFS extends BasePortableFakeFS {
       } };
     const interval = setInterval(() => {
     }, 24 * 60 * 60 * 1e3);
-    return { on: () => {
-    }, close: () => {
-      clearInterval(interval);
-    } };
+    return {
+      on: () => {
+      },
+      close: () => {
+        clearInterval(interval);
+      }
+    };
   }
   watchFile(p, a, b) {
     const resolvedP = ppath.resolve(PortablePath.root, p);
@@ -10097,6 +10224,201 @@ class ZipFS extends BasePortableFakeFS {
   unwatchFile(p, cb) {
     const resolvedP = ppath.resolve(PortablePath.root, p);
     return unwatchFile(this, resolvedP, cb);
+  }
+}
+
+const SIGNATURE = {
+  CENTRAL_DIRECTORY: 33639248,
+  END_OF_CENTRAL_DIRECTORY: 101010256
+};
+const noCommentCDSize = 22;
+class JsZipImpl {
+  fd;
+  baseFs;
+  entries;
+  filesShouldBeCached = false;
+  constructor(opts) {
+    if (`buffer` in opts)
+      throw new Error(`Buffer based zip archives are not supported`);
+    if (!opts.readOnly)
+      throw new Error(`Writable zip archives are not supported`);
+    this.baseFs = opts.baseFs;
+    this.fd = this.baseFs.openSync(opts.path, `r`);
+    try {
+      this.entries = JsZipImpl.readZipSync(this.fd, this.baseFs, opts.size);
+    } catch (error) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+      throw error;
+    }
+  }
+  static readZipSync(fd, baseFs, fileSize) {
+    if (fileSize < noCommentCDSize)
+      throw new Error(`Invalid ZIP file: EOCD not found`);
+    let eocdOffset = -1;
+    let eocdBuffer = Buffer.alloc(noCommentCDSize);
+    baseFs.readSync(
+      fd,
+      eocdBuffer,
+      0,
+      noCommentCDSize,
+      fileSize - noCommentCDSize
+    );
+    if (eocdBuffer.readUInt32LE(0) === SIGNATURE.END_OF_CENTRAL_DIRECTORY) {
+      eocdOffset = 0;
+    } else {
+      const bufferSize = Math.min(65557, fileSize);
+      eocdBuffer = Buffer.alloc(bufferSize);
+      baseFs.readSync(
+        fd,
+        eocdBuffer,
+        0,
+        bufferSize,
+        Math.max(0, fileSize - bufferSize)
+      );
+      for (let i = eocdBuffer.length - 4; i >= 0; i--) {
+        if (eocdBuffer.readUInt32LE(i) === SIGNATURE.END_OF_CENTRAL_DIRECTORY) {
+          eocdOffset = i;
+          break;
+        }
+      }
+      if (eocdOffset === -1) {
+        throw new Error(`Not a zip archive`);
+      }
+    }
+    const totalEntries = eocdBuffer.readUInt16LE(eocdOffset + 10);
+    const centralDirSize = eocdBuffer.readUInt32LE(eocdOffset + 12);
+    const centralDirOffset = eocdBuffer.readUInt32LE(eocdOffset + 16);
+    const commentLength = eocdBuffer.readUInt16LE(eocdOffset + 20);
+    if (eocdOffset + commentLength + noCommentCDSize > eocdBuffer.length)
+      throw new Error(`Zip archive inconsistent`);
+    if (totalEntries == 65535 || centralDirSize == 4294967295 || centralDirOffset == 4294967295)
+      throw new Error(`Zip 64 is not supported`);
+    if (centralDirSize > fileSize)
+      throw new Error(`Zip archive inconsistent`);
+    if (totalEntries > centralDirSize / 46)
+      throw new Error(`Zip archive inconsistent`);
+    const cdBuffer = Buffer.alloc(centralDirSize);
+    if (baseFs.readSync(fd, cdBuffer, 0, cdBuffer.length, centralDirOffset) !== cdBuffer.length)
+      throw new Error(`Zip archive inconsistent`);
+    const entries = [];
+    let offset = 0;
+    let index = 0;
+    let sumCompressedSize = 0;
+    while (index < totalEntries) {
+      if (offset + 46 > cdBuffer.length)
+        throw new Error(`Zip archive inconsistent`);
+      if (cdBuffer.readUInt32LE(offset) !== SIGNATURE.CENTRAL_DIRECTORY)
+        throw new Error(`Zip archive inconsistent`);
+      const versionMadeBy = cdBuffer.readUInt16LE(offset + 4);
+      const os = versionMadeBy >>> 8;
+      const flags = cdBuffer.readUInt16LE(offset + 8);
+      if ((flags & 1) !== 0)
+        throw new Error(`Encrypted zip files are not supported`);
+      const compressionMethod = cdBuffer.readUInt16LE(offset + 10);
+      const crc = cdBuffer.readUInt32LE(offset + 16);
+      const nameLength = cdBuffer.readUInt16LE(offset + 28);
+      const extraLength = cdBuffer.readUInt16LE(offset + 30);
+      const commentLength2 = cdBuffer.readUInt16LE(offset + 32);
+      const localHeaderOffset = cdBuffer.readUInt32LE(offset + 42);
+      const name = cdBuffer.toString(`utf8`, offset + 46, offset + 46 + nameLength).replaceAll(`\0`, ` `);
+      if (name.includes(`\0`))
+        throw new Error(`Invalid ZIP file`);
+      const compressedSize = cdBuffer.readUInt32LE(offset + 20);
+      const externalAttributes = cdBuffer.readUInt32LE(offset + 38);
+      entries.push({
+        name,
+        os,
+        mtime: SAFE_TIME,
+        //we dont care,
+        crc,
+        compressionMethod,
+        isSymbolicLink: os === ZIP_UNIX && (externalAttributes >>> 16 & S_IFMT) === S_IFLNK,
+        size: cdBuffer.readUInt32LE(offset + 24),
+        compressedSize,
+        externalAttributes,
+        localHeaderOffset
+      });
+      sumCompressedSize += compressedSize;
+      index += 1;
+      offset += 46 + nameLength + extraLength + commentLength2;
+    }
+    if (sumCompressedSize > fileSize)
+      throw new Error(`Zip archive inconsistent`);
+    if (offset !== cdBuffer.length)
+      throw new Error(`Zip archive inconsistent`);
+    return entries;
+  }
+  getExternalAttributes(index) {
+    const entry = this.entries[index];
+    return [entry.os, entry.externalAttributes];
+  }
+  getListings() {
+    return this.entries.map((e) => e.name);
+  }
+  getSymlinkCount() {
+    let count = 0;
+    for (const entry of this.entries)
+      if (entry.isSymbolicLink)
+        count += 1;
+    return count;
+  }
+  stat(index) {
+    const entry = this.entries[index];
+    return {
+      crc: entry.crc,
+      mtime: entry.mtime,
+      size: entry.size
+    };
+  }
+  locate(name) {
+    for (let ind = 0; ind < this.entries.length; ind++)
+      if (this.entries[ind].name === name)
+        return ind;
+    return -1;
+  }
+  getFileSource(index) {
+    if (this.fd === `closed`)
+      throw new Error(`ZIP file is closed`);
+    const entry = this.entries[index];
+    const localHeaderBuf = Buffer.alloc(30);
+    this.baseFs.readSync(
+      this.fd,
+      localHeaderBuf,
+      0,
+      localHeaderBuf.length,
+      entry.localHeaderOffset
+    );
+    const nameLength = localHeaderBuf.readUInt16LE(26);
+    const extraLength = localHeaderBuf.readUInt16LE(28);
+    const buffer = Buffer.alloc(entry.compressedSize);
+    if (this.baseFs.readSync(this.fd, buffer, 0, entry.compressedSize, entry.localHeaderOffset + 30 + nameLength + extraLength) !== entry.compressedSize)
+      throw new Error(`Invalid ZIP file`);
+    return { data: buffer, compressionMethod: entry.compressionMethod };
+  }
+  discard() {
+    if (this.fd !== `closed`) {
+      this.baseFs.closeSync(this.fd);
+      this.fd = `closed`;
+    }
+  }
+  addDirectory(path) {
+    throw new Error(`Not implemented`);
+  }
+  deleteEntry(index) {
+    throw new Error(`Not implemented`);
+  }
+  setMtime(index, mtime) {
+    throw new Error(`Not implemented`);
+  }
+  getBufferAndClose() {
+    throw new Error(`Not implemented`);
+  }
+  setFileSource(target, compression, buffer) {
+    throw new Error(`Not implemented`);
+  }
+  setExternalAttributes(index, opsys, attributes) {
+    throw new Error(`Not implemented`);
   }
 }
 
@@ -10156,7 +10478,7 @@ function getPathForDisplay(p) {
   return npath.normalize(npath.fromPortablePath(p));
 }
 
-const [major, minor] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
+const [major, minor, patch] = process.versions.node.split(`.`).map((value) => parseInt(value, 10));
 const WATCH_MODE_MESSAGE_USES_ARRAYS = major > 19 || major === 19 && minor >= 2 || major === 18 && minor >= 13;
 
 function readPackageScope(checkPath) {
@@ -10191,9 +10513,9 @@ Instead change the require of ${basename} in ${parentPath} to a dynamic import()
   err.code = `ERR_REQUIRE_ESM`;
   return err;
 }
-function reportRequiredFilesToWatchMode(files) {
+function reportRequiredFilesToWatchMode(paths) {
   if (process.env.WATCH_REPORT_DEPENDENCIES && process.send) {
-    files = files.map((filename) => npath.fromPortablePath(VirtualFS.resolveVirtual(npath.toPortablePath(filename))));
+    const files = paths.map((filename) => npath.fromPortablePath(VirtualFS.resolveVirtual(filename)));
     if (WATCH_MODE_MESSAGE_USES_ARRAYS) {
       process.send({ "watch:require": files });
     } else {
@@ -10284,6 +10606,7 @@ function applyPatch(pnpapi, opts) {
       const optionNames = new Set(Object.keys(options));
       optionNames.delete(`paths`);
       optionNames.delete(`plugnplay`);
+      optionNames.delete(`conditions`);
       if (optionNames.size > 0) {
         throw makeError(
           ErrorCode.UNSUPPORTED,
@@ -10312,11 +10635,15 @@ function applyPatch(pnpapi, opts) {
       const issuerApi = apiPath !== null ? opts.manager.getApiEntry(apiPath, true).instance : null;
       try {
         if (issuerApi !== null) {
-          resolution = issuerApi.resolveRequest(request, path !== null ? `${path}/` : null);
+          resolution = issuerApi.resolveRequest(request, path !== null ? `${path}/` : null, {
+            conditions: options?.conditions
+          });
         } else {
           if (path === null)
             throw new Error(`Assertion failed: Expected the path to be set`);
-          resolution = originalModuleResolveFilename.call(require$$0.Module, request, module || makeFakeParent(path), isMain);
+          resolution = originalModuleResolveFilename.call(require$$0.Module, request, module || makeFakeParent(path), isMain, {
+            conditions: options?.conditions
+          });
         }
       } catch (error) {
         firstError = firstError || error;
@@ -10450,6 +10777,7 @@ function hydrateRuntimeState(data, { basePath }) {
     dependencyTreeRoots,
     enableTopLevelFallback,
     fallbackExclusionList,
+    pnpZipBackend: data.pnpZipBackend,
     fallbackPool,
     ignorePattern,
     packageLocatorsByLocations,
@@ -11830,9 +12158,10 @@ Required by: ${issuerLocator.name}@${issuerLocator.reference} (via ${issuerForDi
     const candidates = [];
     const qualifiedPath = applyNodeExtensionResolution(unqualifiedPath, candidates, { extensions });
     if (qualifiedPath) {
+      reportRequiredFilesToWatchMode([qualifiedPath]);
       return ppath.normalize(qualifiedPath);
     } else {
-      reportRequiredFilesToWatchMode(candidates.map((candidate) => npath.fromPortablePath(candidate)));
+      reportRequiredFilesToWatchMode(candidates);
       const unqualifiedPathForDisplay = getPathForDisplay(unqualifiedPath);
       const containingPackage = findPackageLocator(unqualifiedPath);
       if (containingPackage) {
@@ -12106,8 +12435,10 @@ const localFs = { ...fs__default.default };
 const nodeFs = new NodeFS(localFs);
 const defaultRuntimeState = $$SETUP_STATE(hydrateRuntimeState);
 const defaultPnpapiResolution = __filename;
+const customZipImplementation = defaultRuntimeState.pnpZipBackend === `js` ? JsZipImpl : void 0;
 const defaultFsLayer = new VirtualFS({
   baseFs: new ZipOpenFS({
+    customZipImplementation,
     baseFs: nodeFs,
     maxOpenFiles: 80,
     readOnlyArchives: true
